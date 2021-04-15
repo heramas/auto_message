@@ -1,0 +1,19 @@
+spring:
+ profiles:
+  active: local
+
+---
+spring:
+  profiles: local
+
+custom:
+  title: "local title"
+
+---
+spring:
+  profiles: prod
+
+custom:
+  title: "prod title"
+
+
