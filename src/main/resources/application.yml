@@ -21,7 +21,7 @@ logging:
 
 #WAS server setting
 server:  port: 8000
-  servlet:    context-path: /product
+  servlet:    context-path: /
 
 # View Resolver setting
 spring:  mvc:    view:      prefix: /WEB-INF/view/
