@@ -15,5 +15,14 @@ spring:
 
 custom:
   title: "prod title"
+---
+logging:
+  config: classpath:log4j2.xml
 
+#WAS server setting
+server:  port: 8000
+  servlet:    context-path: /product
 
+# View Resolver setting
+spring:  mvc:    view:      prefix: /WEB-INF/view/
+      suffix: .jsp
