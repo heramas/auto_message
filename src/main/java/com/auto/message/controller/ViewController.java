@@ -4,7 +4,6 @@ import java.util.GregorianCalendar;
 import java.util.List;
 import java.util.Objects;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.Cacheable;
@@ -17,12 +16,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.auto.message.dto.Member;
-
-import jdk.internal.org.jline.utils.Log;
 
 @RestController
 public class ViewController {
@@ -60,9 +56,9 @@ public class ViewController {
 	@RequestMapping(value = "/filter/main" , method = RequestMethod.GET)
 	public String filterMain(String info) {
 		try {
-			long a = System.currentTimeMillis();
+			double a = System.currentTimeMillis();
 			Thread.sleep(3000);
-			long b = System.currentTimeMillis();
+			double b = System.currentTimeMillis();
 			
 			System.out.println("출력 : ["+info+"] - "+(b-a)/1000+"초");
 		} catch (Exception e) {
