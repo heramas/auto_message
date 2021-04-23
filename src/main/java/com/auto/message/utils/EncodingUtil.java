@@ -1,4 +1,4 @@
-package com.auto.messages.utils;
+package com.auto.message.utils;
 
 import java.nio.ByteBuffer;
 import java.security.AlgorithmParameters;
