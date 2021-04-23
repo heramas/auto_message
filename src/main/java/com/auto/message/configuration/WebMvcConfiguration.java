@@ -11,7 +11,8 @@ public class WebMvcConfiguration implements WebMvcConfigurer{
 
 	@Override
 	public void addInterceptors(InterceptorRegistry registry) {
-		registry.addInterceptor(new LoggerInterceptor());
+		registry.addInterceptor(new LoggerInterceptor())
+		.excludePathPatterns("/css/**", "/fonts/**", "/plugin/**", "/scripts/**"); // 정적 리소스 파일 제외하기 위해 선언
 	}
 	
 }
