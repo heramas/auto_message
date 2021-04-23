@@ -1,6 +1,5 @@
 package com.auto.message.controller;
 
-import java.util.ArrayList;
 import java.util.GregorianCalendar;
 import java.util.List;
 import java.util.Objects;
@@ -22,7 +21,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.auto.message.dto.Member;
 
 @RestController
-public class ViewController {
+public class MessageController {
 
 	String a;
 
@@ -78,6 +77,7 @@ public class ViewController {
 	public static void main(String[] args) {
 		double a = System.currentTimeMillis();
 		ExpressionParser p = new SpelExpressionParser();
+		
 //		Expression e = p.parseExpression("'Hello World!'.concat('!')");
 //		String ms = (String) e.getValue();
 //		System.out.println(ms);
@@ -100,9 +100,8 @@ public class ViewController {
 		Expression e = p.parseExpression("name");
 		EvaluationContext con = new StandardEvaluationContext(m);
 		
-		String name = (String) e.getValue(con);
-		
-		double b = System.currentTimeMillis();
+		String name	 = (String) e.getValue(con);
+		double b	 = System.currentTimeMillis();
 		
 		System.out.println(name + " - 시간 : " +(b-a)/1000 + "초");
 		
