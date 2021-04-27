@@ -4,6 +4,8 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.MongoTemplate;
+import org.springframework.data.mongodb.core.query.Criteria;
+import org.springframework.data.mongodb.core.query.Query;
 
 import com.auto.message.dto.MongoTestDTO;
 
@@ -28,4 +30,27 @@ public class MongoDAO {
 		return mongoTemplate.findAll(MongoTestDTO.class);
 	}
 	
+	
+	public MongoTestDTO findOne(MongoTestDTO mDto) {
+		
+		MongoTestDTO mongoTestDTO = null;
+		
+		Query 	 query 		= null;
+		Criteria criteria 	= null;
+		
+		try {
+			query 	 = new Query();
+			criteria = new Criteria();
+			
+			criteria = Criteria.where("name").is(mDto.getName());
+			query.addCriteria(criteria);
+			
+			mongoTestDTO = mongoTemplate.findOne(query, MongoTestDTO.class);
+			
+		} catch (Exception e) {
+			
+		}
+		
+		return mongoTestDTO;
+	}
 }

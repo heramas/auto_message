@@ -6,10 +6,10 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 
 import com.auto.message.dto.MongoTestDTO;
 
-public interface MongoService extends MongoRepository<MongoTestDTO, Long> {
+public interface MongoService extends MongoRepository<MongoTestDTO, String> {
 	
 	public List<MongoTestDTO> 	findAll();
 	//public boolean 				insert(MongoTestDTO mValue);
-	public MongoTestDTO 		findOn(MongoTestDTO mDto);
+	public MongoTestDTO 		findOne(MongoTestDTO mDto);
 	
 }

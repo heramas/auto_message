@@ -27,7 +27,7 @@ server:  port: 8000
 spring:  mvc:    view:      prefix: /WEB-INF/view/
       suffix: .jsp
       
-# mongoDB setting  data:    mongodb:      uri: mongodb
+# mongoDB setting  data:    mongodb:      uri: mongodb://localhost:27017
       database: admin
       username: root
       password: 1q2w3e!@#
