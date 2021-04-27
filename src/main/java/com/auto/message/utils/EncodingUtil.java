@@ -109,17 +109,19 @@ public class EncodingUtil {
 
 	public static void main(String[] args) throws NoSuchAlgorithmException {
 		try {
-			String key = "secret key";
-			String ms = "안녕하세요";
-			String a1 = EncodingUtil.md5(ms);
-			String a2 = EncodingUtil.sha256(ms);
-			String a3 = EncodingUtil.decryptAES256(ms, key);
-			String a4 = EncodingUtil.decryptAES256(a3, key);
+			String a = "안녕하세요";
+			String s = "secret";
+			String b,c,d,dd;
 			
-			System.out.println("a1" + a1);
-			System.out.println("a2" + a2);
-			System.out.println("a3" + a3);
-			System.out.println("a4" + a4);
+			b = md5(a);
+			c = sha256(a);
+			d = encryptAES256(a, s);
+			dd = decryptAES256(d, s);
+			
+			System.out.println("암호화 md5 : " + b);
+			System.out.println("암호화 sha-256 : " + c);
+			System.out.println("암호화 AES256 : " + d);
+			System.out.println("복구화 AES256 : " + dd);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
