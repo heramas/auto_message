@@ -26,3 +26,8 @@ server:  port: 8000
 # View Resolver setting
 spring:  mvc:    view:      prefix: /WEB-INF/view/
       suffix: .jsp
+      
+# mongoDB setting  data:    mongodb:      uri: mongodb
+      database: admin
+      username: root
+      password: 1q2w3e!@#
