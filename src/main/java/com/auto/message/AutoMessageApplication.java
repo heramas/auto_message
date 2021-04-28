@@ -1,24 +1,26 @@
 package com.auto.message;
 
+import java.util.Arrays;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.ServletComponentScan;
 import org.springframework.cache.annotation.EnableCaching;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.data.mongodb.core.MongoTemplate;
 
-import com.auto.message.dto.Member;
-import com.auto.message.service.MemberRepository;
+import com.auto.message.dto.MongoTestDTO;
 
 @EnableCaching
 @SpringBootApplication
 @ServletComponentScan
-public class AutoMessageApplication {
+public class AutoMessageApplication implements CommandLineRunner{
+	
+	@Autowired
+	MongoTemplate mongoTemplate;
+	
 	/*
 	 * private static Logger logger =
 	 * LoggerFactory.getLogger(AutoMessageApplication.class);
@@ -64,4 +66,17 @@ public class AutoMessageApplication {
 		 * 
 		 * @ResponseBody public String index(){ return "HelloWorld"; }
 		 */
+
+	@Override
+	public void run(String... args) throws Exception {
+		
+		MongoTestDTO mongoDTO1 = new MongoTestDTO("춘식이","01012358899","서울시 강남구","chun:)@naver.com");
+		MongoTestDTO mongoDTO2 = new MongoTestDTO("춘식이2","01112358899","서울시 강남구 선릉","chun:)2@naver.com");
+		
+		mongoTemplate.insert(Arrays.asList(mongoDTO1,mongoDTO2), MongoTestDTO.class);
+		
+		List<MongoTestDTO> result = mongoTemplate.findAll(MongoTestDTO.class);
+		
+		System.out.println(result);
+	}
 }

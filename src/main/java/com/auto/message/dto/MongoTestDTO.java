@@ -17,4 +17,10 @@ public class MongoTestDTO {
 	private String addr;
 	private String email;
 	
+	public MongoTestDTO(String name, String number, String addr, String email) {
+		this.name   = name;
+		this.number = number;
+		this.addr   = addr;
+		this.email  = email;
+	}
 }
