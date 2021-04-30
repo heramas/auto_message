@@ -13,5 +13,20 @@
     "name": "spring.data.mongodb.test.connection-string",
     "type": "java.lang.String",
     "description": "A description for 'spring.data.mongodb.test.connection-string'"
+  },
+  {
+    "name": "datasource.url",
+    "type": "java.lang.String",
+    "description": "A description for 'datasource.url'"
+  },
+  {
+    "name": "datasource.username",
+    "type": "java.lang.String",
+    "description": "A description for 'datasource.username'"
+  },
+  {
+    "name": "datasource.password",
+    "type": "java.lang.String",
+    "description": "A description for 'datasource.password'"
   }
 ]}

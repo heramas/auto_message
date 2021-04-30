@@ -14,8 +14,6 @@ public class MongoDAO {
 	@Autowired
 	private MongoTemplate mongoTemplate;
 	
-	@Autowired
-	private MongoService mongoService;
 	/*
 	 * private boolean insert(MongoTestDTO mValue) {
 	 * 

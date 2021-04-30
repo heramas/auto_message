@@ -24,4 +24,18 @@ public class Member {
 		this.date = date;
 		this.calls = calls;
 	}
+	
+	public String toString() {
+		
+		return "\nO > -----------------------------------------------"+
+				"\nO >  Member "+
+				"\nO > -----------------------------------------------"+
+				"\nO > idx      : "+ idx +
+				"\nO > email    : "+ email +
+				"\nO > name     : "+ name +
+				"\nO > date     : "+ date +
+				"\nO > calls    : "+ calls +
+				"\nO > -----------------------------------------------"+
+				"\n";
+	}
 }

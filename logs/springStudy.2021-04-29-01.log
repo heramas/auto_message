@@ -1,0 +1,863 @@
+2021-04-29 13:24:50,837 [Thread-223] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler(shutdown:218) - Shutting down ExecutorService 'taskScheduler'
+2021-04-29 13:24:50,839 [Thread-223] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor(shutdown:218) - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-29 13:24:50,935 [restartedMain] WARN  org.springframework.boot.context.config.ConfigDataEnvironment(logTo:258) - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 12:13]
+2021-04-29 13:24:50,935 [restartedMain] WARN  org.springframework.boot.context.config.ConfigDataEnvironment(logTo:258) - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 7:13]
+2021-04-29 13:24:51,063 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:128) - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-04-29 13:24:51,070 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:188) - Finished Spring Data repository scanning in 6 ms. Found 0 MongoDB repository interfaces.
+2021-04-29 13:24:51,127 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:108) - Tomcat initialized with port(s): 8000 (http)
+2021-04-29 13:24:51,183 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:289) - Root WebApplicationContext: initialization completed in 248 ms
+2021-04-29 13:24:51,260 [restartedMain] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor(initialize:181) - Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-29 13:24:51,310 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:58) - LiveReload server is running on port 35729
+2021-04-29 13:24:51,323 [restartedMain] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler(initialize:181) - Initializing ExecutorService 'taskScheduler'
+2021-04-29 13:24:51,337 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:220) - Tomcat started on port(s): 8000 (http) with context path ''
+2021-04-29 13:24:51,365 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener(onApplicationEvent:63) - Condition evaluation unchanged
+2021-04-29 13:25:00,121 [Thread-228] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler(shutdown:218) - Shutting down ExecutorService 'taskScheduler'
+2021-04-29 13:25:00,121 [Thread-228] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor(shutdown:218) - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-29 13:25:00,212 [restartedMain] WARN  org.springframework.boot.context.config.ConfigDataEnvironment(logTo:258) - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 12:13]
+2021-04-29 13:25:00,212 [restartedMain] WARN  org.springframework.boot.context.config.ConfigDataEnvironment(logTo:258) - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 7:13]
+2021-04-29 13:25:00,340 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:128) - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-04-29 13:25:00,346 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:188) - Finished Spring Data repository scanning in 6 ms. Found 0 MongoDB repository interfaces.
+2021-04-29 13:25:00,403 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:108) - Tomcat initialized with port(s): 8000 (http)
+2021-04-29 13:25:00,459 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:289) - Root WebApplicationContext: initialization completed in 247 ms
+2021-04-29 13:25:00,534 [restartedMain] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor(initialize:181) - Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-29 13:25:00,588 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:58) - LiveReload server is running on port 35729
+2021-04-29 13:25:00,600 [restartedMain] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler(initialize:181) - Initializing ExecutorService 'taskScheduler'
+2021-04-29 13:25:00,616 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:220) - Tomcat started on port(s): 8000 (http) with context path ''
+2021-04-29 13:25:00,646 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener(onApplicationEvent:63) - Condition evaluation unchanged
+2021-04-29 13:25:37,232 [Thread-233] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler(shutdown:218) - Shutting down ExecutorService 'taskScheduler'
+2021-04-29 13:25:37,233 [Thread-233] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor(shutdown:218) - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-29 13:25:37,324 [restartedMain] WARN  org.springframework.boot.context.config.ConfigDataEnvironment(logTo:258) - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 12:13]
+2021-04-29 13:25:37,324 [restartedMain] WARN  org.springframework.boot.context.config.ConfigDataEnvironment(logTo:258) - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 7:13]
+2021-04-29 13:25:37,450 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:128) - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-04-29 13:25:37,456 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:188) - Finished Spring Data repository scanning in 6 ms. Found 0 MongoDB repository interfaces.
+2021-04-29 13:25:37,513 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:108) - Tomcat initialized with port(s): 8000 (http)
+2021-04-29 13:25:37,568 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:289) - Root WebApplicationContext: initialization completed in 243 ms
+2021-04-29 13:25:37,643 [restartedMain] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor(initialize:181) - Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-29 13:25:37,691 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:58) - LiveReload server is running on port 35729
+2021-04-29 13:25:37,707 [restartedMain] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler(initialize:181) - Initializing ExecutorService 'taskScheduler'
+2021-04-29 13:25:37,722 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:220) - Tomcat started on port(s): 8000 (http) with context path ''
+2021-04-29 13:25:37,750 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener(onApplicationEvent:63) - Condition evaluation unchanged
+2021-04-29 13:28:33,647 [Thread-238] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler(shutdown:218) - Shutting down ExecutorService 'taskScheduler'
+2021-04-29 13:28:33,648 [Thread-238] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor(shutdown:218) - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-29 13:28:33,751 [restartedMain] WARN  org.springframework.boot.context.config.ConfigDataEnvironment(logTo:258) - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 12:13]
+2021-04-29 13:28:33,752 [restartedMain] WARN  org.springframework.boot.context.config.ConfigDataEnvironment(logTo:258) - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 7:13]
+2021-04-29 13:28:33,882 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:128) - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-04-29 13:28:33,889 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:188) - Finished Spring Data repository scanning in 6 ms. Found 0 MongoDB repository interfaces.
+2021-04-29 13:28:33,945 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:108) - Tomcat initialized with port(s): 8000 (http)
+2021-04-29 13:28:34,001 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:289) - Root WebApplicationContext: initialization completed in 249 ms
+2021-04-29 13:28:34,076 [restartedMain] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor(initialize:181) - Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-29 13:28:34,127 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:58) - LiveReload server is running on port 35729
+2021-04-29 13:28:34,140 [restartedMain] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler(initialize:181) - Initializing ExecutorService 'taskScheduler'
+2021-04-29 13:28:34,155 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:220) - Tomcat started on port(s): 8000 (http) with context path ''
+2021-04-29 13:28:34,158 [scheduling-1] ERROR org.springframework.scheduling.support.TaskUtils$LoggingErrorHandler(handleError:95) - Unexpected error occurred in scheduled task
+java.lang.Error: Unresolved compilation problem: 
+	Unhandled exception type ParseException
+
+	at com.auto.message.scheduler.SendScheduler.checkDate(SendScheduler.java:28) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:564) ~[?:?]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-5.3.5.jar:5.3.5]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) [?:?]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+2021-04-29 13:28:34,183 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener(onApplicationEvent:63) - Condition evaluation unchanged
+2021-04-29 13:29:34,160 [scheduling-1] ERROR org.springframework.scheduling.support.TaskUtils$LoggingErrorHandler(handleError:95) - Unexpected error occurred in scheduled task
+java.lang.Error: Unresolved compilation problem: 
+	Unhandled exception type ParseException
+
+	at com.auto.message.scheduler.SendScheduler.checkDate(SendScheduler.java:28) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:564) ~[?:?]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-5.3.5.jar:5.3.5]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) [?:?]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+2021-04-29 13:29:49,028 [Thread-243] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler(shutdown:218) - Shutting down ExecutorService 'taskScheduler'
+2021-04-29 13:29:49,029 [Thread-243] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor(shutdown:218) - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-29 13:29:49,121 [restartedMain] WARN  org.springframework.boot.context.config.ConfigDataEnvironment(logTo:258) - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 12:13]
+2021-04-29 13:29:49,121 [restartedMain] WARN  org.springframework.boot.context.config.ConfigDataEnvironment(logTo:258) - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 7:13]
+2021-04-29 13:29:49,254 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:128) - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-04-29 13:29:49,262 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:188) - Finished Spring Data repository scanning in 6 ms. Found 0 MongoDB repository interfaces.
+2021-04-29 13:29:49,319 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:108) - Tomcat initialized with port(s): 8000 (http)
+2021-04-29 13:29:49,375 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:289) - Root WebApplicationContext: initialization completed in 254 ms
+2021-04-29 13:29:49,453 [restartedMain] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor(initialize:181) - Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-29 13:29:49,504 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:58) - LiveReload server is running on port 35729
+2021-04-29 13:29:49,519 [restartedMain] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler(initialize:181) - Initializing ExecutorService 'taskScheduler'
+2021-04-29 13:29:49,535 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:220) - Tomcat started on port(s): 8000 (http) with context path ''
+2021-04-29 13:29:49,562 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener(onApplicationEvent:63) - Condition evaluation unchanged
+2021-04-29 13:34:01,177 [Thread-248] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler(shutdown:218) - Shutting down ExecutorService 'taskScheduler'
+2021-04-29 13:34:01,178 [Thread-248] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor(shutdown:218) - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-29 13:34:01,271 [restartedMain] WARN  org.springframework.boot.context.config.ConfigDataEnvironment(logTo:258) - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 12:13]
+2021-04-29 13:34:01,271 [restartedMain] WARN  org.springframework.boot.context.config.ConfigDataEnvironment(logTo:258) - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 7:13]
+2021-04-29 13:34:01,395 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:128) - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-04-29 13:34:01,402 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:188) - Finished Spring Data repository scanning in 6 ms. Found 0 MongoDB repository interfaces.
+2021-04-29 13:34:01,458 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:108) - Tomcat initialized with port(s): 8000 (http)
+2021-04-29 13:34:01,512 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:289) - Root WebApplicationContext: initialization completed in 241 ms
+2021-04-29 13:34:01,589 [restartedMain] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor(initialize:181) - Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-29 13:34:01,639 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:58) - LiveReload server is running on port 35729
+2021-04-29 13:34:01,651 [restartedMain] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler(initialize:181) - Initializing ExecutorService 'taskScheduler'
+2021-04-29 13:34:01,666 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:220) - Tomcat started on port(s): 8000 (http) with context path ''
+2021-04-29 13:34:01,694 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener(onApplicationEvent:63) - Condition evaluation unchanged
+2021-04-29 13:36:04,143 [Thread-253] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler(shutdown:218) - Shutting down ExecutorService 'taskScheduler'
+2021-04-29 13:36:04,143 [Thread-253] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor(shutdown:218) - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-29 13:36:04,236 [restartedMain] WARN  org.springframework.boot.context.config.ConfigDataEnvironment(logTo:258) - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 12:13]
+2021-04-29 13:36:04,236 [restartedMain] WARN  org.springframework.boot.context.config.ConfigDataEnvironment(logTo:258) - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 7:13]
+2021-04-29 13:36:04,364 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:128) - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-04-29 13:36:04,371 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:188) - Finished Spring Data repository scanning in 6 ms. Found 0 MongoDB repository interfaces.
+2021-04-29 13:36:04,428 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:108) - Tomcat initialized with port(s): 8000 (http)
+2021-04-29 13:36:04,481 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:289) - Root WebApplicationContext: initialization completed in 244 ms
+2021-04-29 13:36:04,557 [restartedMain] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor(initialize:181) - Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-29 13:36:04,608 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:58) - LiveReload server is running on port 35729
+2021-04-29 13:36:04,621 [restartedMain] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler(initialize:181) - Initializing ExecutorService 'taskScheduler'
+2021-04-29 13:36:04,636 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:220) - Tomcat started on port(s): 8000 (http) with context path ''
+2021-04-29 13:36:04,665 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener(onApplicationEvent:63) - Condition evaluation unchanged
+2021-04-29 13:38:13,260 [Thread-258] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler(shutdown:218) - Shutting down ExecutorService 'taskScheduler'
+2021-04-29 13:38:13,260 [Thread-258] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor(shutdown:218) - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-29 13:38:13,354 [restartedMain] WARN  org.springframework.boot.context.config.ConfigDataEnvironment(logTo:258) - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 12:13]
+2021-04-29 13:38:13,354 [restartedMain] WARN  org.springframework.boot.context.config.ConfigDataEnvironment(logTo:258) - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 7:13]
+2021-04-29 13:38:13,479 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:128) - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-04-29 13:38:13,487 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:188) - Finished Spring Data repository scanning in 7 ms. Found 0 MongoDB repository interfaces.
+2021-04-29 13:38:13,547 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:108) - Tomcat initialized with port(s): 8000 (http)
+2021-04-29 13:38:13,604 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:289) - Root WebApplicationContext: initialization completed in 250 ms
+2021-04-29 13:38:13,682 [restartedMain] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor(initialize:181) - Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-29 13:38:13,729 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:58) - LiveReload server is running on port 35729
+2021-04-29 13:38:13,745 [restartedMain] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler(initialize:181) - Initializing ExecutorService 'taskScheduler'
+2021-04-29 13:38:13,760 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:220) - Tomcat started on port(s): 8000 (http) with context path ''
+2021-04-29 13:38:13,788 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener(onApplicationEvent:63) - Condition evaluation unchanged
+2021-04-29 13:38:26,690 [Thread-263] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler(shutdown:218) - Shutting down ExecutorService 'taskScheduler'
+2021-04-29 13:38:26,690 [Thread-263] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor(shutdown:218) - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-29 13:38:26,786 [restartedMain] WARN  org.springframework.boot.context.config.ConfigDataEnvironment(logTo:258) - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 12:13]
+2021-04-29 13:38:26,786 [restartedMain] WARN  org.springframework.boot.context.config.ConfigDataEnvironment(logTo:258) - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 7:13]
+2021-04-29 13:38:26,914 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:128) - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-04-29 13:38:26,921 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:188) - Finished Spring Data repository scanning in 6 ms. Found 0 MongoDB repository interfaces.
+2021-04-29 13:38:26,977 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:108) - Tomcat initialized with port(s): 8000 (http)
+2021-04-29 13:38:27,031 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:289) - Root WebApplicationContext: initialization completed in 245 ms
+2021-04-29 13:38:27,075 [restartedMain] WARN  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext(refresh:591) - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sendScheduler' defined in file [C:\Users\Owner\Documents\workspace-spring-tool-suite-4-4.9.0.RELEASE\auto_message\target\classes\com\auto\message\scheduler\SendScheduler.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.auto.message.scheduler.SendScheduler]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	Syntax error on token "new", invalid VariableDeclaratorId
+
+2021-04-29 13:38:27,080 [restartedMain] INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener(logMessage:136) - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-04-29 13:38:27,092 [restartedMain] ERROR org.springframework.boot.SpringApplication(reportFailure:858) - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sendScheduler' defined in file [C:\Users\Owner\Documents\workspace-spring-tool-suite-4-4.9.0.RELEASE\auto_message\target\classes\com\auto\message\scheduler\SendScheduler.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.auto.message.scheduler.SendScheduler]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	Syntax error on token "new", invalid VariableDeclaratorId
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1316) ~[spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1214) ~[spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564) ~[spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524) ~[spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944) ~[spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144) ~[spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:769) ~[spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761) [spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426) [spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326) [spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1313) [spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302) [spring-boot-2.4.4.jar:2.4.4]
+	at com.auto.message.AutoMessageApplication.main(AutoMessageApplication.java:31) [classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:564) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.4.4.jar:2.4.4]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.auto.message.scheduler.SendScheduler]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	Syntax error on token "new", invalid VariableDeclaratorId
+
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:225) ~[spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87) ~[spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1308) ~[spring-beans-5.3.5.jar:5.3.5]
+	... 23 more
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	Syntax error on token "new", invalid VariableDeclaratorId
+
+	at com.auto.message.scheduler.SendScheduler.<init>(SendScheduler.java:13) ~[classes/:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:481) ~[?:?]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:212) ~[spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87) ~[spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1308) ~[spring-beans-5.3.5.jar:5.3.5]
+	... 23 more
+2021-04-29 13:38:30,636 [restartedMain] WARN  org.springframework.boot.context.config.ConfigDataEnvironment(logTo:258) - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 12:13]
+2021-04-29 13:38:30,636 [restartedMain] WARN  org.springframework.boot.context.config.ConfigDataEnvironment(logTo:258) - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 7:13]
+2021-04-29 13:38:30,765 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:128) - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-04-29 13:38:30,772 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:188) - Finished Spring Data repository scanning in 6 ms. Found 0 MongoDB repository interfaces.
+2021-04-29 13:38:30,828 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:108) - Tomcat initialized with port(s): 8000 (http)
+2021-04-29 13:38:30,882 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:289) - Root WebApplicationContext: initialization completed in 246 ms
+2021-04-29 13:38:30,958 [restartedMain] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor(initialize:181) - Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-29 13:38:31,004 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:58) - LiveReload server is running on port 35729
+2021-04-29 13:38:31,020 [restartedMain] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler(initialize:181) - Initializing ExecutorService 'taskScheduler'
+2021-04-29 13:38:31,034 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:220) - Tomcat started on port(s): 8000 (http) with context path ''
+2021-04-29 13:38:31,062 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener(onApplicationEvent:63) - Condition evaluation unchanged
+2021-04-29 13:43:21,048 [Thread-268] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler(shutdown:218) - Shutting down ExecutorService 'taskScheduler'
+2021-04-29 13:43:21,048 [Thread-268] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor(shutdown:218) - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-29 13:43:21,143 [restartedMain] WARN  org.springframework.boot.context.config.ConfigDataEnvironment(logTo:258) - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 12:13]
+2021-04-29 13:43:21,143 [restartedMain] WARN  org.springframework.boot.context.config.ConfigDataEnvironment(logTo:258) - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 7:13]
+2021-04-29 13:43:21,271 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:128) - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-04-29 13:43:21,278 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:188) - Finished Spring Data repository scanning in 6 ms. Found 0 MongoDB repository interfaces.
+2021-04-29 13:43:21,336 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:108) - Tomcat initialized with port(s): 8000 (http)
+2021-04-29 13:43:21,391 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:289) - Root WebApplicationContext: initialization completed in 248 ms
+2021-04-29 13:43:21,468 [restartedMain] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor(initialize:181) - Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-29 13:43:21,522 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:58) - LiveReload server is running on port 35729
+2021-04-29 13:43:21,535 [restartedMain] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler(initialize:181) - Initializing ExecutorService 'taskScheduler'
+2021-04-29 13:43:21,550 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:220) - Tomcat started on port(s): 8000 (http) with context path ''
+2021-04-29 13:43:21,553 [scheduling-1] ERROR org.springframework.scheduling.support.TaskUtils$LoggingErrorHandler(handleError:95) - Unexpected error occurred in scheduled task
+java.lang.Error: Unresolved compilation problem: 
+	nc cannot be resolved to a variable
+
+	at com.auto.message.scheduler.SendScheduler.checkDate(SendScheduler.java:44) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:564) ~[?:?]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-5.3.5.jar:5.3.5]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) [?:?]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+2021-04-29 13:43:21,578 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener(onApplicationEvent:63) - Condition evaluation unchanged
+2021-04-29 13:43:22,562 [scheduling-1] ERROR org.springframework.scheduling.support.TaskUtils$LoggingErrorHandler(handleError:95) - Unexpected error occurred in scheduled task
+java.lang.Error: Unresolved compilation problem: 
+	nc cannot be resolved to a variable
+
+	at com.auto.message.scheduler.SendScheduler.checkDate(SendScheduler.java:44) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:564) ~[?:?]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-5.3.5.jar:5.3.5]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) [?:?]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+2021-04-29 13:43:23,578 [scheduling-1] ERROR org.springframework.scheduling.support.TaskUtils$LoggingErrorHandler(handleError:95) - Unexpected error occurred in scheduled task
+java.lang.Error: Unresolved compilation problem: 
+	nc cannot be resolved to a variable
+
+	at com.auto.message.scheduler.SendScheduler.checkDate(SendScheduler.java:44) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:564) ~[?:?]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-5.3.5.jar:5.3.5]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) [?:?]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+2021-04-29 13:43:24,593 [scheduling-1] ERROR org.springframework.scheduling.support.TaskUtils$LoggingErrorHandler(handleError:95) - Unexpected error occurred in scheduled task
+java.lang.Error: Unresolved compilation problem: 
+	nc cannot be resolved to a variable
+
+	at com.auto.message.scheduler.SendScheduler.checkDate(SendScheduler.java:44) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:564) ~[?:?]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-5.3.5.jar:5.3.5]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) [?:?]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+2021-04-29 13:43:25,596 [scheduling-1] ERROR org.springframework.scheduling.support.TaskUtils$LoggingErrorHandler(handleError:95) - Unexpected error occurred in scheduled task
+java.lang.Error: Unresolved compilation problem: 
+	nc cannot be resolved to a variable
+
+	at com.auto.message.scheduler.SendScheduler.checkDate(SendScheduler.java:44) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:564) ~[?:?]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-5.3.5.jar:5.3.5]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) [?:?]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+2021-04-29 13:43:26,599 [scheduling-1] ERROR org.springframework.scheduling.support.TaskUtils$LoggingErrorHandler(handleError:95) - Unexpected error occurred in scheduled task
+java.lang.Error: Unresolved compilation problem: 
+	nc cannot be resolved to a variable
+
+	at com.auto.message.scheduler.SendScheduler.checkDate(SendScheduler.java:44) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:564) ~[?:?]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-5.3.5.jar:5.3.5]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) [?:?]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+2021-04-29 13:43:27,607 [scheduling-1] ERROR org.springframework.scheduling.support.TaskUtils$LoggingErrorHandler(handleError:95) - Unexpected error occurred in scheduled task
+java.lang.Error: Unresolved compilation problem: 
+	nc cannot be resolved to a variable
+
+	at com.auto.message.scheduler.SendScheduler.checkDate(SendScheduler.java:44) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:564) ~[?:?]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-5.3.5.jar:5.3.5]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) [?:?]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+2021-04-29 13:43:28,622 [scheduling-1] ERROR org.springframework.scheduling.support.TaskUtils$LoggingErrorHandler(handleError:95) - Unexpected error occurred in scheduled task
+java.lang.Error: Unresolved compilation problem: 
+	nc cannot be resolved to a variable
+
+	at com.auto.message.scheduler.SendScheduler.checkDate(SendScheduler.java:44) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:564) ~[?:?]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-5.3.5.jar:5.3.5]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) [?:?]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+2021-04-29 13:43:29,624 [scheduling-1] ERROR org.springframework.scheduling.support.TaskUtils$LoggingErrorHandler(handleError:95) - Unexpected error occurred in scheduled task
+java.lang.Error: Unresolved compilation problem: 
+	nc cannot be resolved to a variable
+
+	at com.auto.message.scheduler.SendScheduler.checkDate(SendScheduler.java:44) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:564) ~[?:?]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-5.3.5.jar:5.3.5]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) [?:?]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+2021-04-29 13:43:30,637 [scheduling-1] ERROR org.springframework.scheduling.support.TaskUtils$LoggingErrorHandler(handleError:95) - Unexpected error occurred in scheduled task
+java.lang.Error: Unresolved compilation problem: 
+	nc cannot be resolved to a variable
+
+	at com.auto.message.scheduler.SendScheduler.checkDate(SendScheduler.java:44) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:564) ~[?:?]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-5.3.5.jar:5.3.5]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) [?:?]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+2021-04-29 13:43:31,649 [scheduling-1] ERROR org.springframework.scheduling.support.TaskUtils$LoggingErrorHandler(handleError:95) - Unexpected error occurred in scheduled task
+java.lang.Error: Unresolved compilation problem: 
+	nc cannot be resolved to a variable
+
+	at com.auto.message.scheduler.SendScheduler.checkDate(SendScheduler.java:44) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:564) ~[?:?]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-5.3.5.jar:5.3.5]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) [?:?]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+2021-04-29 13:43:32,651 [scheduling-1] ERROR org.springframework.scheduling.support.TaskUtils$LoggingErrorHandler(handleError:95) - Unexpected error occurred in scheduled task
+java.lang.Error: Unresolved compilation problem: 
+	nc cannot be resolved to a variable
+
+	at com.auto.message.scheduler.SendScheduler.checkDate(SendScheduler.java:44) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:564) ~[?:?]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-5.3.5.jar:5.3.5]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) [?:?]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+2021-04-29 13:43:33,657 [scheduling-1] ERROR org.springframework.scheduling.support.TaskUtils$LoggingErrorHandler(handleError:95) - Unexpected error occurred in scheduled task
+java.lang.Error: Unresolved compilation problem: 
+	nc cannot be resolved to a variable
+
+	at com.auto.message.scheduler.SendScheduler.checkDate(SendScheduler.java:44) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:564) ~[?:?]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-5.3.5.jar:5.3.5]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) [?:?]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+2021-04-29 13:43:34,671 [scheduling-1] ERROR org.springframework.scheduling.support.TaskUtils$LoggingErrorHandler(handleError:95) - Unexpected error occurred in scheduled task
+java.lang.Error: Unresolved compilation problem: 
+	nc cannot be resolved to a variable
+
+	at com.auto.message.scheduler.SendScheduler.checkDate(SendScheduler.java:44) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:564) ~[?:?]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-5.3.5.jar:5.3.5]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) [?:?]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+2021-04-29 13:43:35,675 [scheduling-1] ERROR org.springframework.scheduling.support.TaskUtils$LoggingErrorHandler(handleError:95) - Unexpected error occurred in scheduled task
+java.lang.Error: Unresolved compilation problem: 
+	nc cannot be resolved to a variable
+
+	at com.auto.message.scheduler.SendScheduler.checkDate(SendScheduler.java:44) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:564) ~[?:?]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-5.3.5.jar:5.3.5]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) [?:?]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+2021-04-29 13:43:36,677 [scheduling-1] ERROR org.springframework.scheduling.support.TaskUtils$LoggingErrorHandler(handleError:95) - Unexpected error occurred in scheduled task
+java.lang.Error: Unresolved compilation problem: 
+	nc cannot be resolved to a variable
+
+	at com.auto.message.scheduler.SendScheduler.checkDate(SendScheduler.java:44) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:564) ~[?:?]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-5.3.5.jar:5.3.5]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) [?:?]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+2021-04-29 13:43:37,685 [scheduling-1] ERROR org.springframework.scheduling.support.TaskUtils$LoggingErrorHandler(handleError:95) - Unexpected error occurred in scheduled task
+java.lang.Error: Unresolved compilation problem: 
+	nc cannot be resolved to a variable
+
+	at com.auto.message.scheduler.SendScheduler.checkDate(SendScheduler.java:44) ~[classes/:?]
+	at jdk.internal.reflect.GeneratedMethodAccessor387.invoke(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:564) ~[?:?]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-5.3.5.jar:5.3.5]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) [?:?]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+2021-04-29 13:43:38,686 [scheduling-1] ERROR org.springframework.scheduling.support.TaskUtils$LoggingErrorHandler(handleError:95) - Unexpected error occurred in scheduled task
+java.lang.Error: Unresolved compilation problem: 
+	nc cannot be resolved to a variable
+
+	at com.auto.message.scheduler.SendScheduler.checkDate(SendScheduler.java:44) ~[classes/:?]
+	at jdk.internal.reflect.GeneratedMethodAccessor387.invoke(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:564) ~[?:?]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-5.3.5.jar:5.3.5]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) [?:?]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+2021-04-29 13:43:39,700 [scheduling-1] ERROR org.springframework.scheduling.support.TaskUtils$LoggingErrorHandler(handleError:95) - Unexpected error occurred in scheduled task
+java.lang.Error: Unresolved compilation problem: 
+	nc cannot be resolved to a variable
+
+	at com.auto.message.scheduler.SendScheduler.checkDate(SendScheduler.java:44) ~[classes/:?]
+	at jdk.internal.reflect.GeneratedMethodAccessor387.invoke(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:564) ~[?:?]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-5.3.5.jar:5.3.5]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) [?:?]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+2021-04-29 13:43:40,711 [scheduling-1] ERROR org.springframework.scheduling.support.TaskUtils$LoggingErrorHandler(handleError:95) - Unexpected error occurred in scheduled task
+java.lang.Error: Unresolved compilation problem: 
+	nc cannot be resolved to a variable
+
+	at com.auto.message.scheduler.SendScheduler.checkDate(SendScheduler.java:44) ~[classes/:?]
+	at jdk.internal.reflect.GeneratedMethodAccessor387.invoke(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:564) ~[?:?]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-5.3.5.jar:5.3.5]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) [?:?]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+2021-04-29 13:43:41,713 [scheduling-1] ERROR org.springframework.scheduling.support.TaskUtils$LoggingErrorHandler(handleError:95) - Unexpected error occurred in scheduled task
+java.lang.Error: Unresolved compilation problem: 
+	nc cannot be resolved to a variable
+
+	at com.auto.message.scheduler.SendScheduler.checkDate(SendScheduler.java:44) ~[classes/:?]
+	at jdk.internal.reflect.GeneratedMethodAccessor387.invoke(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:564) ~[?:?]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-5.3.5.jar:5.3.5]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) [?:?]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+2021-04-29 13:43:42,714 [scheduling-1] ERROR org.springframework.scheduling.support.TaskUtils$LoggingErrorHandler(handleError:95) - Unexpected error occurred in scheduled task
+java.lang.Error: Unresolved compilation problem: 
+	nc cannot be resolved to a variable
+
+	at com.auto.message.scheduler.SendScheduler.checkDate(SendScheduler.java:44) ~[classes/:?]
+	at jdk.internal.reflect.GeneratedMethodAccessor387.invoke(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:564) ~[?:?]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-5.3.5.jar:5.3.5]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) [?:?]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+2021-04-29 13:43:43,731 [scheduling-1] ERROR org.springframework.scheduling.support.TaskUtils$LoggingErrorHandler(handleError:95) - Unexpected error occurred in scheduled task
+java.lang.Error: Unresolved compilation problem: 
+	nc cannot be resolved to a variable
+
+	at com.auto.message.scheduler.SendScheduler.checkDate(SendScheduler.java:44) ~[classes/:?]
+	at jdk.internal.reflect.GeneratedMethodAccessor387.invoke(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:564) ~[?:?]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-5.3.5.jar:5.3.5]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) [?:?]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+2021-04-29 13:43:44,736 [scheduling-1] ERROR org.springframework.scheduling.support.TaskUtils$LoggingErrorHandler(handleError:95) - Unexpected error occurred in scheduled task
+java.lang.Error: Unresolved compilation problem: 
+	nc cannot be resolved to a variable
+
+	at com.auto.message.scheduler.SendScheduler.checkDate(SendScheduler.java:44) ~[classes/:?]
+	at jdk.internal.reflect.GeneratedMethodAccessor387.invoke(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:564) ~[?:?]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-5.3.5.jar:5.3.5]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) [?:?]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+2021-04-29 13:43:45,744 [scheduling-1] ERROR org.springframework.scheduling.support.TaskUtils$LoggingErrorHandler(handleError:95) - Unexpected error occurred in scheduled task
+java.lang.Error: Unresolved compilation problem: 
+	nc cannot be resolved to a variable
+
+	at com.auto.message.scheduler.SendScheduler.checkDate(SendScheduler.java:44) ~[classes/:?]
+	at jdk.internal.reflect.GeneratedMethodAccessor387.invoke(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:564) ~[?:?]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-5.3.5.jar:5.3.5]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) [?:?]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+2021-04-29 13:43:45,778 [Thread-276] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler(shutdown:218) - Shutting down ExecutorService 'taskScheduler'
+2021-04-29 13:43:45,778 [Thread-276] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor(shutdown:218) - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-29 13:43:45,871 [restartedMain] WARN  org.springframework.boot.context.config.ConfigDataEnvironment(logTo:258) - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 12:13]
+2021-04-29 13:43:45,872 [restartedMain] WARN  org.springframework.boot.context.config.ConfigDataEnvironment(logTo:258) - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 7:13]
+2021-04-29 13:43:46,000 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:128) - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-04-29 13:43:46,008 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:188) - Finished Spring Data repository scanning in 6 ms. Found 0 MongoDB repository interfaces.
+2021-04-29 13:43:46,066 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:108) - Tomcat initialized with port(s): 8000 (http)
+2021-04-29 13:43:46,119 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:289) - Root WebApplicationContext: initialization completed in 247 ms
+2021-04-29 13:43:46,194 [restartedMain] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor(initialize:181) - Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-29 13:43:46,245 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:58) - LiveReload server is running on port 35729
+2021-04-29 13:43:46,257 [restartedMain] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler(initialize:181) - Initializing ExecutorService 'taskScheduler'
+2021-04-29 13:43:46,272 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:220) - Tomcat started on port(s): 8000 (http) with context path ''
+2021-04-29 13:43:46,300 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener(onApplicationEvent:63) - Condition evaluation unchanged
+2021-04-29 13:43:58,109 [Thread-281] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler(shutdown:218) - Shutting down ExecutorService 'taskScheduler'
+2021-04-29 13:43:58,109 [Thread-281] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor(shutdown:218) - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-29 13:43:58,202 [restartedMain] WARN  org.springframework.boot.context.config.ConfigDataEnvironment(logTo:258) - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 12:13]
+2021-04-29 13:43:58,202 [restartedMain] WARN  org.springframework.boot.context.config.ConfigDataEnvironment(logTo:258) - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 7:13]
+2021-04-29 13:43:58,331 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:128) - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-04-29 13:43:58,338 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:188) - Finished Spring Data repository scanning in 6 ms. Found 0 MongoDB repository interfaces.
+2021-04-29 13:43:58,394 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:108) - Tomcat initialized with port(s): 8000 (http)
+2021-04-29 13:43:58,450 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:289) - Root WebApplicationContext: initialization completed in 248 ms
+2021-04-29 13:43:58,523 [restartedMain] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor(initialize:181) - Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-29 13:43:58,576 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:58) - LiveReload server is running on port 35729
+2021-04-29 13:43:58,588 [restartedMain] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler(initialize:181) - Initializing ExecutorService 'taskScheduler'
+2021-04-29 13:43:58,602 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:220) - Tomcat started on port(s): 8000 (http) with context path ''
+2021-04-29 13:43:58,630 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener(onApplicationEvent:63) - Condition evaluation unchanged
+2021-04-29 13:44:55,313 [Thread-286] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler(shutdown:218) - Shutting down ExecutorService 'taskScheduler'
+2021-04-29 13:44:55,313 [Thread-286] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor(shutdown:218) - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-29 13:44:55,408 [restartedMain] WARN  org.springframework.boot.context.config.ConfigDataEnvironment(logTo:258) - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 12:13]
+2021-04-29 13:44:55,408 [restartedMain] WARN  org.springframework.boot.context.config.ConfigDataEnvironment(logTo:258) - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 7:13]
+2021-04-29 13:44:55,535 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:128) - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-04-29 13:44:55,541 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:188) - Finished Spring Data repository scanning in 6 ms. Found 0 MongoDB repository interfaces.
+2021-04-29 13:44:55,597 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:108) - Tomcat initialized with port(s): 8000 (http)
+2021-04-29 13:44:55,652 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:289) - Root WebApplicationContext: initialization completed in 244 ms
+2021-04-29 13:44:55,728 [restartedMain] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor(initialize:181) - Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-29 13:44:55,779 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:58) - LiveReload server is running on port 35729
+2021-04-29 13:44:55,790 [restartedMain] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler(initialize:181) - Initializing ExecutorService 'taskScheduler'
+2021-04-29 13:44:55,805 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:220) - Tomcat started on port(s): 8000 (http) with context path ''
+2021-04-29 13:44:55,808 [scheduling-1] ERROR org.springframework.scheduling.support.TaskUtils$LoggingErrorHandler(handleError:95) - Unexpected error occurred in scheduled task
+java.lang.Error: Unresolved compilation problem: 
+	The operator - is undefined for the argument type(s) String, long
+
+	at com.auto.message.scheduler.SendScheduler.checkDate(SendScheduler.java:41) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:564) ~[?:?]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-5.3.5.jar:5.3.5]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) [?:?]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+2021-04-29 13:44:55,834 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener(onApplicationEvent:63) - Condition evaluation unchanged
+2021-04-29 13:44:56,810 [scheduling-1] ERROR org.springframework.scheduling.support.TaskUtils$LoggingErrorHandler(handleError:95) - Unexpected error occurred in scheduled task
+java.lang.Error: Unresolved compilation problem: 
+	The operator - is undefined for the argument type(s) String, long
+
+	at com.auto.message.scheduler.SendScheduler.checkDate(SendScheduler.java:41) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:564) ~[?:?]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-5.3.5.jar:5.3.5]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) [?:?]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+2021-04-29 13:44:57,812 [scheduling-1] ERROR org.springframework.scheduling.support.TaskUtils$LoggingErrorHandler(handleError:95) - Unexpected error occurred in scheduled task
+java.lang.Error: Unresolved compilation problem: 
+	The operator - is undefined for the argument type(s) String, long
+
+	at com.auto.message.scheduler.SendScheduler.checkDate(SendScheduler.java:41) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:564) ~[?:?]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-5.3.5.jar:5.3.5]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) [?:?]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+2021-04-29 13:44:58,814 [scheduling-1] ERROR org.springframework.scheduling.support.TaskUtils$LoggingErrorHandler(handleError:95) - Unexpected error occurred in scheduled task
+java.lang.Error: Unresolved compilation problem: 
+	The operator - is undefined for the argument type(s) String, long
+
+	at com.auto.message.scheduler.SendScheduler.checkDate(SendScheduler.java:41) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:564) ~[?:?]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-5.3.5.jar:5.3.5]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) [?:?]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+2021-04-29 13:44:59,815 [scheduling-1] ERROR org.springframework.scheduling.support.TaskUtils$LoggingErrorHandler(handleError:95) - Unexpected error occurred in scheduled task
+java.lang.Error: Unresolved compilation problem: 
+	The operator - is undefined for the argument type(s) String, long
+
+	at com.auto.message.scheduler.SendScheduler.checkDate(SendScheduler.java:41) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:564) ~[?:?]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-5.3.5.jar:5.3.5]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) [?:?]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+2021-04-29 13:45:00,816 [scheduling-1] ERROR org.springframework.scheduling.support.TaskUtils$LoggingErrorHandler(handleError:95) - Unexpected error occurred in scheduled task
+java.lang.Error: Unresolved compilation problem: 
+	The operator - is undefined for the argument type(s) String, long
+
+	at com.auto.message.scheduler.SendScheduler.checkDate(SendScheduler.java:41) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:564) ~[?:?]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-5.3.5.jar:5.3.5]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) [?:?]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+2021-04-29 13:45:01,818 [scheduling-1] ERROR org.springframework.scheduling.support.TaskUtils$LoggingErrorHandler(handleError:95) - Unexpected error occurred in scheduled task
+java.lang.Error: Unresolved compilation problem: 
+	The operator - is undefined for the argument type(s) String, long
+
+	at com.auto.message.scheduler.SendScheduler.checkDate(SendScheduler.java:41) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:564) ~[?:?]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-5.3.5.jar:5.3.5]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) [?:?]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+2021-04-29 13:45:02,351 [Thread-291] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler(shutdown:218) - Shutting down ExecutorService 'taskScheduler'
+2021-04-29 13:45:02,351 [Thread-291] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor(shutdown:218) - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-29 13:45:02,444 [restartedMain] WARN  org.springframework.boot.context.config.ConfigDataEnvironment(logTo:258) - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 12:13]
+2021-04-29 13:45:02,444 [restartedMain] WARN  org.springframework.boot.context.config.ConfigDataEnvironment(logTo:258) - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 7:13]
+2021-04-29 13:45:02,571 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:128) - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-04-29 13:45:02,577 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:188) - Finished Spring Data repository scanning in 6 ms. Found 0 MongoDB repository interfaces.
+2021-04-29 13:45:02,633 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:108) - Tomcat initialized with port(s): 8000 (http)
+2021-04-29 13:45:02,687 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:289) - Root WebApplicationContext: initialization completed in 243 ms
+2021-04-29 13:45:02,763 [restartedMain] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor(initialize:181) - Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-29 13:45:02,813 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:58) - LiveReload server is running on port 35729
+2021-04-29 13:45:02,825 [restartedMain] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler(initialize:181) - Initializing ExecutorService 'taskScheduler'
+2021-04-29 13:45:02,839 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:220) - Tomcat started on port(s): 8000 (http) with context path ''
+2021-04-29 13:45:02,868 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener(onApplicationEvent:63) - Condition evaluation unchanged
+2021-04-29 13:48:28,657 [Thread-296] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler(shutdown:218) - Shutting down ExecutorService 'taskScheduler'
+2021-04-29 13:48:28,657 [Thread-296] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor(shutdown:218) - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-29 13:48:28,754 [restartedMain] WARN  org.springframework.boot.context.config.ConfigDataEnvironment(logTo:258) - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 12:13]
+2021-04-29 13:48:28,754 [restartedMain] WARN  org.springframework.boot.context.config.ConfigDataEnvironment(logTo:258) - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 7:13]
+2021-04-29 13:48:28,879 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:128) - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-04-29 13:48:28,886 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:188) - Finished Spring Data repository scanning in 6 ms. Found 0 MongoDB repository interfaces.
+2021-04-29 13:48:28,941 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:108) - Tomcat initialized with port(s): 8000 (http)
+2021-04-29 13:48:28,994 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:289) - Root WebApplicationContext: initialization completed in 240 ms
+2021-04-29 13:48:29,070 [restartedMain] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor(initialize:181) - Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-29 13:48:29,121 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:58) - LiveReload server is running on port 35729
+2021-04-29 13:48:29,133 [restartedMain] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler(initialize:181) - Initializing ExecutorService 'taskScheduler'
+2021-04-29 13:48:29,147 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:220) - Tomcat started on port(s): 8000 (http) with context path ''
+2021-04-29 13:48:29,176 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener(onApplicationEvent:63) - Condition evaluation unchanged
+2021-04-29 13:50:57,496 [Thread-301] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler(shutdown:218) - Shutting down ExecutorService 'taskScheduler'
+2021-04-29 13:50:57,497 [Thread-301] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor(shutdown:218) - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-29 13:50:57,591 [restartedMain] WARN  org.springframework.boot.context.config.ConfigDataEnvironment(logTo:258) - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 12:13]
+2021-04-29 13:50:57,591 [restartedMain] WARN  org.springframework.boot.context.config.ConfigDataEnvironment(logTo:258) - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 7:13]
+2021-04-29 13:50:57,719 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:128) - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-04-29 13:50:57,725 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:188) - Finished Spring Data repository scanning in 6 ms. Found 0 MongoDB repository interfaces.
+2021-04-29 13:50:57,784 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:108) - Tomcat initialized with port(s): 8000 (http)
+2021-04-29 13:50:57,838 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:289) - Root WebApplicationContext: initialization completed in 246 ms
+2021-04-29 13:50:57,912 [restartedMain] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor(initialize:181) - Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-29 13:50:57,963 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:58) - LiveReload server is running on port 35729
+2021-04-29 13:50:57,975 [restartedMain] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler(initialize:181) - Initializing ExecutorService 'taskScheduler'
+2021-04-29 13:50:57,990 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:220) - Tomcat started on port(s): 8000 (http) with context path ''
+2021-04-29 13:50:58,019 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener(onApplicationEvent:63) - Condition evaluation unchanged
+2021-04-29 13:53:34,475 [Thread-306] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler(shutdown:218) - Shutting down ExecutorService 'taskScheduler'
+2021-04-29 13:53:34,476 [Thread-306] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor(shutdown:218) - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-29 13:53:34,570 [restartedMain] WARN  org.springframework.boot.context.config.ConfigDataEnvironment(logTo:258) - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 12:13]
+2021-04-29 13:53:34,570 [restartedMain] WARN  org.springframework.boot.context.config.ConfigDataEnvironment(logTo:258) - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 7:13]
+2021-04-29 13:53:34,696 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:128) - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-04-29 13:53:34,703 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:188) - Finished Spring Data repository scanning in 6 ms. Found 0 MongoDB repository interfaces.
+2021-04-29 13:53:34,758 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:108) - Tomcat initialized with port(s): 8000 (http)
+2021-04-29 13:53:34,812 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:289) - Root WebApplicationContext: initialization completed in 242 ms
+2021-04-29 13:53:34,887 [restartedMain] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor(initialize:181) - Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-29 13:53:34,937 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:58) - LiveReload server is running on port 35729
+2021-04-29 13:53:34,950 [restartedMain] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler(initialize:181) - Initializing ExecutorService 'taskScheduler'
+2021-04-29 13:53:34,965 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:220) - Tomcat started on port(s): 8000 (http) with context path ''
+2021-04-29 13:53:34,992 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener(onApplicationEvent:63) - Condition evaluation unchanged
+2021-04-29 13:53:46,628 [Thread-311] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler(shutdown:218) - Shutting down ExecutorService 'taskScheduler'
+2021-04-29 13:53:46,629 [Thread-311] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor(shutdown:218) - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-29 13:53:46,723 [restartedMain] WARN  org.springframework.boot.context.config.ConfigDataEnvironment(logTo:258) - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 12:13]
+2021-04-29 13:53:46,723 [restartedMain] WARN  org.springframework.boot.context.config.ConfigDataEnvironment(logTo:258) - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 7:13]
+2021-04-29 13:53:46,852 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:128) - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-04-29 13:53:46,858 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate(registerRepositoriesIn:188) - Finished Spring Data repository scanning in 6 ms. Found 0 MongoDB repository interfaces.
+2021-04-29 13:53:46,915 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:108) - Tomcat initialized with port(s): 8000 (http)
+2021-04-29 13:53:46,970 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:289) - Root WebApplicationContext: initialization completed in 246 ms
+2021-04-29 13:53:47,044 [restartedMain] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor(initialize:181) - Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-29 13:53:47,096 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:58) - LiveReload server is running on port 35729
+2021-04-29 13:53:47,108 [restartedMain] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler(initialize:181) - Initializing ExecutorService 'taskScheduler'
+2021-04-29 13:53:47,123 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:220) - Tomcat started on port(s): 8000 (http) with context path ''
+2021-04-29 13:53:47,150 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener(onApplicationEvent:63) - Condition evaluation unchanged

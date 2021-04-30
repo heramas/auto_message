@@ -1,4 +1,4 @@
-package com.auto.message.service;
+package com.auto.message.repository;
 
 import com.auto.message.dto.Member;
 

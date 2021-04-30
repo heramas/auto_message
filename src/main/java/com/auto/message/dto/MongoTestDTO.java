@@ -23,4 +23,17 @@ public class MongoTestDTO {
 		this.addr   = addr;
 		this.email  = email;
 	}
+	
+	public String toString() {
+		
+		return "\nO > -----------------------------------------------"+
+				"\nO >  MongoTestDTO "+
+				"\nO > -----------------------------------------------"+
+				"\nO > name      : "+ name +
+				"\nO > number    : "+ number +
+				"\nO > addr      : "+ addr +
+				"\nO > email     : "+ email +
+				"\nO > -----------------------------------------------"+
+				"\n";
+	}
 }

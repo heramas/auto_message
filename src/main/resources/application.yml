@@ -1,18 +1,15 @@
 spring:
  profiles:
-  active: local
+  active: local         # 기본 환경 선택
 
 ---
 spring:
   profiles: local
-
 custom:
   title: "local title"
-
 ---
 spring:
   profiles: prod
-
 custom:
   title: "prod title"
 ---
@@ -31,5 +28,11 @@ spring:  mvc:    view:      prefix: /WEB-INF/view/
       uri: mongodb://localhost:27017/admin
       username: root
       password: 1q2w3e!@#
- 
+      
+# mysql setting
+  datasource:    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/admin
+    username: root
+    password: 1q2w3e!@#
+   
       
