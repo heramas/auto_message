@@ -18,7 +18,7 @@ import com.auto.message.interceptor.HeaderRequestInterceptor;
 @Service
 public class PushUtil {
 
-	private static final String FCM_SERVER_KEY = "AAAAN2bBvdY:APA91bFWH5q__qOnYFhTEihz7NhnsUJINvMWjy36MlZB6sgaeuJReTvW2V3YDmh7t0fzQsWpTRr40K4u0bToVG3RgaeJ-bUc30LiDDcd2kWeK2nY0mD1gVBHJCifFboH_tITAkC7b1cD";
+	private static final String FCM_SERVER_KEY = "";
 	private static final String FCM_SERVER_URL = "https://fcm.googleapis.com/fcm/send";
 	
 	
