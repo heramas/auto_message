@@ -15,12 +15,12 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
 import com.auto.message.interceptor.HeaderRequestInterceptor;
+
 @Service
 public class PushUtil {
 
-	private static final String FCM_SERVER_KEY = "";
+	private static final String FCM_SERVER_KEY = "AAAAN2bBvdY:APA91bFWH5q__qOnYFhTEihz7NhnsUJINvMWjy36MlZB6sgaeuJReTvW2V3YDmh7t0fzQsWpTRr40K4u0bToVG3RgaeJ-bUc30LiDDcd2kWeK2nY0mD1gVBHJCifFboH_tITAkC7b1cD";
 	private static final String FCM_SERVER_URL = "https://fcm.googleapis.com/fcm/send";
-	
 	
 	/**
 	 * 안드로이드 전용? 모르겠음 
@@ -29,20 +29,20 @@ public class PushUtil {
 	 * @return
 	 */
 	 @Async
-	    public CompletableFuture<String> send(HttpEntity<String> entity) {
+	 public CompletableFuture<String> send(HttpEntity<String> entity) {
+		System.out.println("FCM_SERVER_KEY : "+FCM_SERVER_KEY);
+        RestTemplate restTemplate = new RestTemplate();
 
-	        RestTemplate restTemplate = new RestTemplate();
+        ArrayList<ClientHttpRequestInterceptor> interceptors = new ArrayList<>();
 
-	        ArrayList<ClientHttpRequestInterceptor> interceptors = new ArrayList<>();
+        interceptors.add(new HeaderRequestInterceptor("Authorization",  "key=" + FCM_SERVER_KEY));
+        interceptors.add(new HeaderRequestInterceptor("Content-Type", "application/json"));
+        restTemplate.setInterceptors(interceptors);
 
-	        interceptors.add(new HeaderRequestInterceptor("Authorization",  "key=" + FCM_SERVER_KEY));
-	        interceptors.add(new HeaderRequestInterceptor("Content-Type", "application/json"));
-	        restTemplate.setInterceptors(interceptors);
+        String firebaseResponse = restTemplate.postForObject(FCM_SERVER_URL, entity, String.class);
 
-	        String firebaseResponse = restTemplate.postForObject(FCM_SERVER_URL, entity, String.class);
-
-	        return CompletableFuture.completedFuture(firebaseResponse);
-	    }
+        return CompletableFuture.completedFuture(firebaseResponse);
+    }
 
 	 
 	 /**
@@ -84,7 +84,7 @@ public class PushUtil {
     }
 	
 	 public static void main(String[] args) {
-		
+		 
 		 PushUtil 			pushUtil 		= new PushUtil();
 		 String 			notifications 	= pushUtil.PeriodicNotificationJson();
 		 HttpEntity<String> req 			= new HttpEntity<String>(notifications);

@@ -28,5 +28,20 @@
     "name": "datasource.password",
     "type": "java.lang.String",
     "description": "A description for 'datasource.password'"
+  },
+  {
+    "name": "custom.push",
+    "type": "java.lang.String",
+    "description": "A description for 'custom.push'"
+  },
+  {
+    "name": "propertis.push.key",
+    "type": "java.lang.String",
+    "description": "A description for 'propertis.push.key'"
+  },
+  {
+    "name": "propertis.push.bean",
+    "type": "java.lang.String",
+    "description": "A description for 'propertis.push.bean'"
   }
 ]}

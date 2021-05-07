@@ -4,7 +4,9 @@ import java.util.GregorianCalendar;
 import java.util.List;
 import java.util.Objects;
 
-import org.mybatis.spring.annotation.MapperScan;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cache.annotation.CacheEvict;
@@ -14,7 +16,6 @@ import org.springframework.expression.Expression;
 import org.springframework.expression.ExpressionParser;
 import org.springframework.expression.spel.standard.SpelExpressionParser;
 import org.springframework.expression.spel.support.StandardEvaluationContext;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -22,10 +23,10 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.auto.message.dao.UserDAO;
+import com.auto.message.component.MailSendComponent;
+import com.auto.message.dto.ExceptionResult;
 import com.auto.message.dto.Member;
 import com.auto.message.dto.MongoTestDTO;
-import com.auto.message.dto.UserDTO;
 import com.auto.message.service.MongoService;
 
 
@@ -37,6 +38,9 @@ public class MessageController {
 
 	@Autowired
 	MongoService mongoService;
+	
+	@Autowired
+	private MailSendComponent mailsender;
 	
 	String a;
 
@@ -101,8 +105,18 @@ public class MessageController {
 	}
 	
 	
-	@RequestMapping(value = "/auto/fush", method = RequestMethod.POST)
+//	@RequestMapping(value = "/auto/push", method = RequestMethod.POST)
 	
+	@RequestMapping(value = "/mail/send", method = RequestMethod.POST )
+	public void mailSenderController(HttpServletRequest request,
+									 HttpServletResponse response,
+									 @RequestParam(value = "toAddr"	, required = true) String toAddr,
+									 @RequestParam(value = "subject", required = true) String subject,
+									 @RequestParam(value = "body"	, required = true) String body		) throws ExceptionResult {
+		
+		mailsender.sendMail(toAddr, subject, body);
+		throw new ExceptionResult("00", "성공");
+	}
 	
 	
 	public static void main(String[] args) {
@@ -124,6 +138,7 @@ public class MessageController {
 //		Expression e = p.parseExpression("new String('hello world!').toUpperCase");
 //		String s = (String) e.getValue();
 //		System.out.println(s);
+
 		
 		GregorianCalendar c = new GregorianCalendar();
 		c.set(1856, 7, 9);

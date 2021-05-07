@@ -8,18 +8,10 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class SendScheduler {
-
-	@Scheduled(cron = "0 * 9 * * ?")
-	public void sendCron() {
-		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMddHHmmssSSS");
-		Date now = new Date();
-		String sDate = dateFormat.format(now);
-		System.out.println("SendCron : " + sDate);
-	}
 	
-
-	@Scheduled(fixedRate = 6000000)
-	public void oneHour() {
+	
+	@Scheduled(cron = "0 0 * * * ?")
+	public void sendCron() {
 		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMddHHmmssSSS");
 		Date now = new Date();
 		String sDate = dateFormat.format(now);

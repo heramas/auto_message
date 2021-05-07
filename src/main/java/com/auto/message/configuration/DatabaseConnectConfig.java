@@ -19,9 +19,7 @@ import org.springframework.data.mongodb.core.SimpleMongoClientDatabaseFactory;
 @MapperScan(value={"com.auto.message.service"})
 public class DatabaseConnectConfig {
 
-	/*
-	 * mongoDB 연결하기 위한 bean 생성
-	 */
+	// mongoDB 연결하기 위한 bean 생성
 	@Value("${spring.data.mongodb.uri}")
 	private String mongoUrl;
 	
@@ -30,6 +28,7 @@ public class DatabaseConnectConfig {
 		return new SimpleMongoClientDatabaseFactory(mongoUrl);
 	}
 	
+	// MongoTemplate 빈 생성으로 인하여 CRUD 쿼리를 사용 할 수 있게 한다.
 	@Bean
 	public MongoTemplate mongoTemplate() {
 		return new MongoTemplate(databaseFactory());

@@ -16,6 +16,14 @@ import javax.crypto.spec.SecretKeySpec;
 
 public class EncodingUtil {
 
+	
+	/**
+	 * MD5 암호화
+	 * 
+	 * @param msg
+	 * @return
+	 * @throws NoSuchAlgorithmException
+	 */
 	public static String md5(String msg) throws NoSuchAlgorithmException {
 
 	    MessageDigest md = MessageDigest.getInstance("MD5");
@@ -24,6 +32,13 @@ public class EncodingUtil {
 	    return EncodingUtil.byteToHexString(md.digest());
 	}
 
+	/**
+	 * SHA256 암호화
+	 * 
+	 * @param msg
+	 * @return
+	 * @throws NoSuchAlgorithmException
+	 */
 	public static String sha256(String msg)  throws NoSuchAlgorithmException {
 
 	    MessageDigest md = MessageDigest.getInstance("SHA-256");
@@ -32,6 +47,12 @@ public class EncodingUtil {
 	    return EncodingUtil.byteToHexString(md.digest());
 	}
 	
+	/**
+	 * MD5, SHA256 암호화시 메시지 변환 모듈
+	 * 
+	 * @param data
+	 * @return
+	 */
 	public static String byteToHexString(byte[] data) {
 
 	    StringBuilder sb = new StringBuilder();
@@ -43,6 +64,14 @@ public class EncodingUtil {
 
 	}
 
+	/**
+	 * AES256 암호화
+	 * 
+	 * @param msg
+	 * @param key
+	 * @return
+	 * @throws Exception
+	 */
 	public static String encryptAES256(String msg, String key) throws Exception {
 
 	    SecureRandom 	random 		= new SecureRandom();
@@ -80,6 +109,14 @@ public class EncodingUtil {
 
 	}
 	
+	/**
+	 * AES256 복호화
+	 * 
+	 * @param msg
+	 * @param key
+	 * @return
+	 * @throws Exception
+	 */
 	public static String decryptAES256(String msg, String key) throws Exception {
 
 	    Cipher 		cipher = Cipher.getInstance("AES/CBC/PKCS5Padding");
