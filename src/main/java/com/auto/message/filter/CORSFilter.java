@@ -31,6 +31,7 @@ public class CORSFilter implements Filter {
 		HttpServletRequest	req = (HttpServletRequest)  request;
 		HttpServletResponse res = (HttpServletResponse) response;
 		
+		
 		log.info("#### filter - before ####");
 		chain.doFilter(req, res);
 		log.info("#### filter - after ####");

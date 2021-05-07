@@ -53,6 +53,6 @@ jasypt:  encryptor:    bean: jasyptStringEncrptor
       suffix: )
     pool-size: 1
   
-# push  
+# push
 propertis:  push: 
     key: ENC(k3YSrll8d/SyV4FMRPMjWqn0tLAx3LvFcVSwxboDhyIv7Evt7fb89N9EwtZTlttFJCGD5t/U9t3QUCF8PcsX2UKXvlG3pylMADo00uMScg0LF3RmJ6w7/ExXEn30ZerKzF2s46qcyr3/5EP3FTSpNKmPlspUJ4J84ZS+MUHsmljXkeqoimroZFywUZG/spQvihCVCagoVR8VNRtssAOeDta12lG6H9qg)

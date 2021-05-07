@@ -3,6 +3,7 @@ package com.auto.message.controller;
 import java.util.GregorianCalendar;
 import java.util.List;
 import java.util.Objects;
+import java.util.concurrent.CompletableFuture;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -16,6 +17,8 @@ import org.springframework.expression.Expression;
 import org.springframework.expression.ExpressionParser;
 import org.springframework.expression.spel.standard.SpelExpressionParser;
 import org.springframework.expression.spel.support.StandardEvaluationContext;
+import org.springframework.http.HttpEntity;
+import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -24,18 +27,18 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.auto.message.component.MailSendComponent;
-import com.auto.message.dto.ExceptionResult;
 import com.auto.message.dto.Member;
 import com.auto.message.dto.MongoTestDTO;
 import com.auto.message.service.MongoService;
+import com.auto.message.utils.PushUtil;
 
+import lombok.extern.log4j.Log4j2;
 
+@Log4j2
 @RestController
+//@RequestMapping(value = "filter")
 public class MessageController {
-
-//	@Autowired
-//	private UserDAO userDAO;
-
+	
 	@Autowired
 	MongoService mongoService;
 	
@@ -43,10 +46,11 @@ public class MessageController {
 	private MailSendComponent mailsender;
 	
 	String a;
-
+	
+	@Value("${propertis.push.key}")
+	private String pushKey;
 	@Value("${spring.profiles.active}")
 	private String profileActive;
-	
 	@Value("${custom.title}") // 프로퍼티에 저장한 값 가져오기
 	private String title;
 	
@@ -84,15 +88,19 @@ public class MessageController {
 	@Cacheable(value = "test")
 	@RequestMapping(value = "/filter/main" , method = RequestMethod.GET)
 	public String filterMain(String info) {
+		
+		double a = System.currentTimeMillis();
+
 		try {
-			double a = System.currentTimeMillis();
 			Thread.sleep(3000);
-			double b = System.currentTimeMillis();
 			
-			System.out.println("출력 : ["+info+"] - "+(b-a)/1000+"초");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+		
+		double b = System.currentTimeMillis();
+		
+		System.out.println("출력 : ["+info+"] - "+(b-a)/1000+"초");
 		
 		return info;
 
@@ -104,19 +112,46 @@ public class MessageController {
 		list.add(info);
 	}
 	
-	
-//	@RequestMapping(value = "/auto/push", method = RequestMethod.POST)
-	
 	@RequestMapping(value = "/mail/send", method = RequestMethod.POST )
 	public void mailSenderController(HttpServletRequest request,
 									 HttpServletResponse response,
 									 @RequestParam(value = "toAddr"	, required = true) String toAddr,
 									 @RequestParam(value = "subject", required = true) String subject,
-									 @RequestParam(value = "body"	, required = true) String body		) throws ExceptionResult {
+									 @RequestParam(value = "body"	, required = true) String body		) {
 		
 		mailsender.sendMail(toAddr, subject, body);
-		throw new ExceptionResult("00", "성공");
+		log.info("## 메일 전송 완료");
 	}
+	
+	@RequestMapping(value = "/push/send", method = RequestMethod.POST )
+	public void pushSenderController(HttpServletRequest request,
+									 HttpServletResponse response,
+									 @RequestParam(value = "subject", required = true) String subject,
+									 @RequestParam(value = "body"	, required = true) String body		) {
+		
+		String token = "";
+		
+		PushUtil pushUtil = new PushUtil();
+		pushUtil.setKey(pushKey);
+		
+		String 				notifications 	= pushUtil.PeriodicNotificationJson(token, subject, body);
+		HttpEntity<String> 	req 			= new HttpEntity<String>(notifications);
+		 
+		System.out.println("## req : " + req);
+		
+		CompletableFuture<String> pushThread = pushUtil.send(req);
+		CompletableFuture.allOf(pushThread).join();
+		 
+		try {
+			String rsp = pushThread.get();
+			System.out.println("## success_response : " + rsp + ",  https_status : "+HttpStatus.OK);
+		} catch (Exception e) {
+			System.out.println("## error_response : " + e + ",  https_status : " + HttpStatus.BAD_REQUEST);
+		}
+		 
+		System.out.println("## 푸쉬 전송 완료");
+	}
+	
 	
 	
 	public static void main(String[] args) {
