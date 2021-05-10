@@ -11,7 +11,6 @@ import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
-import com.auto.message.component.MailSendComponent;
 import com.auto.message.dto.Member;
 import com.auto.message.dto.MongoTestDTO;
 import com.auto.message.service.MemberMapper;

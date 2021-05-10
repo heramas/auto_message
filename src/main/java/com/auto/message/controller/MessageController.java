@@ -47,7 +47,7 @@ public class MessageController {
 	
 	String a;
 	
-	@Value("${propertis.push.key}")
+	@Value("${propertis.push.key}") // 암호화된 push key 값을 복호화하여 가져온다.
 	private String pushKey;
 	@Value("${spring.profiles.active}")
 	private String profileActive;
@@ -71,8 +71,8 @@ public class MessageController {
 	
 	@RequestMapping(value = "/" , method = RequestMethod.GET)
 	public String main(String str) {
-		str = Objects.toString(str, "null이 들어갈 수 없다."); // 삼항연산자와 같은 함수
-		this.a = Objects.requireNonNull(str, "not null");  //  값이 null인 경우 에러메시지 설정한 값 그대로 반환
+		str = Objects.toString(str, ""); // 삼항연산자와 같은 함수
+		this.a = Objects.requireNonNull(str, "## 데이터에 null 값이 들어오면 안됩니다.");  //  값이 null인 경우 에러메시지 설정한 값 그대로 반환
 
 		return a;
 	}
@@ -123,7 +123,7 @@ public class MessageController {
 		log.info("## 메일 전송 완료");
 	}
 	
-	@RequestMapping(value = "/push/send", method = RequestMethod.POST )
+	@RequestMapping(value = "/push/send", method = RequestMethod.POST, produces = "application/json" )
 	public void pushSenderController(HttpServletRequest request,
 									 HttpServletResponse response,
 									 @RequestParam(value = "subject", required = true) String subject,
@@ -132,24 +132,25 @@ public class MessageController {
 		String token = "";
 		
 		PushUtil pushUtil = new PushUtil();
-		pushUtil.setKey(pushKey);
+		pushUtil.setKey(pushKey); // 복호화한 값을 pushUtil 에 셋팅을 해준다.
 		
 		String 				notifications 	= pushUtil.PeriodicNotificationJson(token, subject, body);
-		HttpEntity<String> 	req 			= new HttpEntity<String>(notifications);
+		HttpEntity<String> 	req				= new HttpEntity<String>(notifications);
 		 
-		System.out.println("## req : " + req);
+		System.out.println("#### [1] - 최종 푸시 내용 : " + req);
 		
 		CompletableFuture<String> pushThread = pushUtil.send(req);
 		CompletableFuture.allOf(pushThread).join();
 		 
 		try {
 			String rsp = pushThread.get();
-			System.out.println("## success_response : " + rsp + ",  https_status : "+HttpStatus.OK);
+			System.out.println("#### [2] - 성공 응답 결과 : " + rsp + ",  https_status : " + HttpStatus.OK);
 		} catch (Exception e) {
-			System.out.println("## error_response : " + e + ",  https_status : " + HttpStatus.BAD_REQUEST);
+			System.out.println("#### [2] - 실패 응답 결과 : " + e +   ",  https_status : " + HttpStatus.BAD_REQUEST);
 		}
-		 
-		System.out.println("## 푸쉬 전송 완료");
+	
+		System.out.println("#### [3] - 푸시 전송 완료");
+
 	}
 	
 	

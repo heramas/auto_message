@@ -2,6 +2,7 @@ package com.auto.message.utils;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 import java.util.concurrent.CompletableFuture;
 
 import org.json.JSONArray;
@@ -42,12 +43,16 @@ public class PushUtil {
 		 ArrayList<ClientHttpRequestInterceptor> interceptors = new ArrayList<>();
 		 RestTemplate 							 restTemplate = new RestTemplate();
 
-		 interceptors.add(new HeaderRequestInterceptor("Authorization",  "key=" + FCM_SERVER_KEY));
-		 interceptors.add(new HeaderRequestInterceptor("Content-Type", "application/json"));
+		 interceptors.add(new HeaderRequestInterceptor("Authorization", "key=" + FCM_SERVER_KEY));
+		 interceptors.add(new HeaderRequestInterceptor("Content-Type" , "application/json"));
 		 restTemplate.setInterceptors(interceptors);
         
 		 String firebaseResponse = restTemplate.postForObject(FCM_SERVER_URL, entity, String.class);
-        
+         
+		 firebaseResponse = Objects.toString(firebaseResponse, "");
+		
+		 if(firebaseResponse.equals("")) log.info("## firebase is null");
+		 
 		 return CompletableFuture.completedFuture(firebaseResponse);
 	 }
 
@@ -83,8 +88,6 @@ public class PushUtil {
 	     notification.put("body" , content);	// 내용
 	     
 	     body.put("notification", notification);
-	     
-	     System.out.println("## body : " +body.toString());
 	     
 	     return body.toString();
     }
