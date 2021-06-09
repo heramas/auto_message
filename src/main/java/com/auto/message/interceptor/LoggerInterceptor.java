@@ -18,11 +18,15 @@ public class LoggerInterceptor implements HandlerInterceptor{
 								Object handler) throws Exception {
 		
 		log.info("======================== START ========================");
+		log.info(" Protocol    : " + request.getProtocol());
+		log.info(" Http Method : " + request.getMethod());
 		log.info(" Request URL : " + request.getRequestURI());
 		log.info(" Remote Addr : " + request.getRemoteAddr());
 		log.info(" Remote Host : " + request.getRemoteHost());
 		log.info(" Remote Port : " + request.getRemotePort());
 		log.info(" Remote User : " + request.getRemoteUser());
+		log.info(" Server Name : " + request.getServerName());
+		log.info(" Server Port : " + request.getServerPort());
 		
 		
 //		return HandlerInterceptor.super.preHandle(request, response, handler);

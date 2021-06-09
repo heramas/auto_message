@@ -52,8 +52,8 @@ public class WebMvcConfiguration implements WebMvcConfigurer{
 		pbeEnc.setPassword("auto_message");
 		
 		String host		="mongodb://localhost:27017/admin";
-		String port		="587";
-		String username	="root";
+		String port		="QiFOFTCJJCRztSX2Xg1z";
+		String username	="gi6CQ0CUH2";
 		String password	="1q2w3e!@#";
 		
 

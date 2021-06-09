@@ -1,6 +1,9 @@
 package com.auto.message.controller;
 
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
 import java.util.GregorianCalendar;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Objects;
 import java.util.concurrent.CompletableFuture;
@@ -27,23 +30,27 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.auto.message.component.MailSendComponent;
+import com.auto.message.component.SearchComponent;
 import com.auto.message.dto.Member;
 import com.auto.message.dto.MongoTestDTO;
 import com.auto.message.service.MongoService;
 import com.auto.message.utils.PushUtil;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.JsonMappingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 
 import lombok.extern.log4j.Log4j2;
 
 @Log4j2
 @RestController
-//@RequestMapping(value = "filter")
 public class MessageController {
 	
 	@Autowired
 	MongoService mongoService;
-	
 	@Autowired
 	private MailSendComponent mailsender;
+	@Autowired
+	SearchComponent searchComponent;
 	
 	String a;
 	
@@ -53,6 +60,10 @@ public class MessageController {
 	private String profileActive;
 	@Value("${custom.title}") // 프로퍼티에 저장한 값 가져오기
 	private String title;
+	@Value("${naver.search.clientID}")
+	private String clientId;
+	@Value("${naver.search.clientSecret}")
+	private String cSecret;
 	
 	@GetMapping("/title")
 	public String title() {
@@ -60,6 +71,7 @@ public class MessageController {
 	}
 	
 	private List<String> list;
+	
 	
 	@RequestMapping(value = "/mongotest")
 	public List<MongoTestDTO> mongoTest() {
@@ -153,6 +165,30 @@ public class MessageController {
 
 	}
 	
+	@RequestMapping(value = "/api/search", method = RequestMethod.GET)
+	public HashMap<String, Object> aroundSearch(	HttpServletRequest request,
+			 					HttpServletResponse response,
+			 					@RequestParam(value = "searchParam", required = true) String param) throws JsonMappingException, JsonProcessingException {
+		
+		String 	result 		= "";
+		String 	getTest 	= "";
+		
+		HashMap<String, Object> paramMap = new HashMap<String, Object>();
+		
+		try {
+			getTest = URLEncoder.encode(param, "UTF-8");
+		} catch (UnsupportedEncodingException e) {
+			throw new RuntimeException("검색어 인코딩 실패",e);
+		}
+		
+		result = searchComponent.search(clientId, cSecret, getTest);
+		
+		HashMap<String, Object> setParam = new ObjectMapper().readValue(result, HashMap.class);
+		
+		paramMap.put("items", setParam.get("items"));
+		
+		return paramMap;
+	}
 	
 	
 	public static void main(String[] args) {
