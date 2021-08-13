@@ -19,7 +19,7 @@ logging:
 #WAS server setting
 server:  port: 7070
   servlet:    context-path: /
-
+    
 # View Resolver setting
 spring:  mvc:    view:      prefix: /WEB-INF/view/
       suffix: .jsp
@@ -44,7 +44,9 @@ spring:  mvc:    view:      prefix: /WEB-INF/view/
         smtp:
           auth: true
           starttls:
-            enable: true
+            enable: true# 기본 설정
+  security:    user:      name: test
+      password: test 
             
 # jasypt bean.. WebMvcCnfiguration 등록
 jasypt:  encryptor:    bean: jasyptStringEncrptor

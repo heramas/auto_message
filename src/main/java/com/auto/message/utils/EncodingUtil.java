@@ -1,10 +1,14 @@
 package com.auto.message.utils;
 
 import java.nio.ByteBuffer;
+import java.nio.charset.StandardCharsets;
 import java.security.AlgorithmParameters;
+import java.security.KeyPair;
+import java.security.KeyPairGenerator;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.security.SecureRandom;
+import java.security.Signature;
 import java.util.Base64;
 
 import javax.crypto.Cipher;
@@ -25,10 +29,15 @@ public class EncodingUtil {
 	 * @throws NoSuchAlgorithmException
 	 */
 	public static String md5(String msg) throws NoSuchAlgorithmException {
-
-	    MessageDigest md = MessageDigest.getInstance("MD5");
+		long start = System.currentTimeMillis();
+	    
+		MessageDigest md = MessageDigest.getInstance("MD5");
 	    md.update(msg.getBytes());
-
+	    
+	    long end = System.currentTimeMillis();
+	    
+	    System.out.println("MD5 경과 : " + (end-start));
+	    
 	    return EncodingUtil.byteToHexString(md.digest());
 	}
 
@@ -40,10 +49,14 @@ public class EncodingUtil {
 	 * @throws NoSuchAlgorithmException
 	 */
 	public static String sha256(String msg)  throws NoSuchAlgorithmException {
-
-	    MessageDigest md = MessageDigest.getInstance("SHA-256");
+		long start = System.currentTimeMillis();
+	    
+		MessageDigest md = MessageDigest.getInstance("SHA-256");
 	    md.update(msg.getBytes());
-
+	    
+	    long end = System.currentTimeMillis();
+	    System.out.println("SHA256 경과 : " + (end-start));
+	    
 	    return EncodingUtil.byteToHexString(md.digest());
 	}
 	
@@ -73,8 +86,9 @@ public class EncodingUtil {
 	 * @throws Exception
 	 */
 	public static String encryptAES256(String msg, String key) throws Exception {
-
-	    SecureRandom 	random 		= new SecureRandom();
+		long start = System.currentTimeMillis();
+	    
+		SecureRandom 	random 		= new SecureRandom();
 	    byte 			bytes[] 	= new byte[20];
 	    random.nextBytes(bytes);
 	    
@@ -104,7 +118,10 @@ public class EncodingUtil {
 	    System.arraycopy(ivBytes			, 0, buffer, saltBytes.length					, ivBytes.length);
 	    System.arraycopy(encryptedTextBytes	, 0, buffer, saltBytes.length + ivBytes.length	, encryptedTextBytes.length);
 
-
+	    
+	    long end = System.currentTimeMillis();
+	    System.out.println("AES256 경과 : " + (end-start));
+	    
 	    return Base64.getEncoder().encodeToString(buffer);
 
 	}
@@ -118,8 +135,9 @@ public class EncodingUtil {
 	 * @throws Exception
 	 */
 	public static String decryptAES256(String msg, String key) throws Exception {
-
-	    Cipher 		cipher = Cipher.getInstance("AES/CBC/PKCS5Padding");
+		long start = System.currentTimeMillis();
+	    
+		Cipher 		cipher = Cipher.getInstance("AES/CBC/PKCS5Padding");
 	    ByteBuffer 	buffer = ByteBuffer.wrap(Base64.getDecoder().decode(msg));
 
 	    byte[] saltBytes = new byte[20];
@@ -140,25 +158,52 @@ public class EncodingUtil {
 
 	    byte[] decryptedTextBytes = cipher.doFinal(encryoptedTextBytes);
 
+	    long end = System.currentTimeMillis();
+	    System.out.println("AES256 복구화 경과 : " + (end-start));
+	    
 	    return new String(decryptedTextBytes);
 
+	}
+	
+	public static String edDSA(String msg) throws Exception {
+		long start = System.currentTimeMillis();
+		
+		KeyPairGenerator 	kpg = KeyPairGenerator.getInstance("Ed25519");
+		KeyPair				kp	= kpg.generateKeyPair();
+		
+		byte[] getStr = msg.getBytes(StandardCharsets.UTF_8);
+		
+		Signature sig = Signature.getInstance("Ed25519");
+		sig.initSign(kp.getPrivate());
+		sig.update(getStr);
+		
+		byte[] resultStr = sig.sign();
+		
+		String encodedStr = Base64.getEncoder().encodeToString(resultStr);
+		
+		long end = System.currentTimeMillis();
+	    System.out.println("edDSA 경과 : " + (end-start));
+		
+		return encodedStr;
 	}
 
 	public static void main(String[] args) throws NoSuchAlgorithmException {
 		try {
 			String a = "안녕하세요";
 			String s = "secret";
-			String b,c,d,dd;
+			String b,c,d,dd,e;
 			
 			b = md5(a);
 			c = sha256(a);
 			d = encryptAES256(a, s);
 			dd = decryptAES256(d, s);
+			e = edDSA(a);
 			
 			System.out.println("암호화 md5 : " + b);
 			System.out.println("암호화 sha-256 : " + c);
 			System.out.println("암호화 AES256 : " + d);
 			System.out.println("복구화 AES256 : " + dd);
+			System.out.println("암호화 EdDSA : " + e);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

@@ -6,6 +6,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.stream.Stream;
 
+import org.springframework.util.NumberUtils;
 import org.w3c.dom.NodeList;
 import org.xml.sax.InputSource;
 
@@ -72,6 +73,8 @@ public class testMain {
 		double st = System.currentTimeMillis();
 		
 		List<String> slist = Arrays.asList("김씨","이씨","박씨","최씨","정씨","구씨","낭궁씨","표씨","류씨","장씨","부씨");
+		
+		// ##### stream
 		Stream<String> sStream = slist.stream();
 		sStream.forEach(testMain::print);
 		
@@ -80,6 +83,7 @@ public class testMain {
 		
 		double st1 = System.currentTimeMillis();
 		
+		// ##### parallelStream
 		Stream<String> parall = slist.parallelStream();
 		parall.forEach(testMain::print);
 		
@@ -102,13 +106,16 @@ public class testMain {
 //		double et = System.currentTimeMillis();
 //		System.out.println("경과1 : "+(et-st)/1000); // 경과 : 0.026 / 병렬로 하면 더 느려짐 0.033 - 값이 많으면 모르겠으나 적어서?
 		
-		String aaa = "2";
-		int ab = Integer.getInteger(aaa, 11);
+		String aaa = "15";
+		int ab = Integer.getInteger(aaa, 10);
+		
 		System.out.println("숫자 : "+ab);
 	}
 	
 	public static void print(String string) {
-		System.out.println(string + " : " + Thread.currentThread().getName());
+//		System.out.println(string + " : " + Thread.currentThread().getName());
+		
+		
 	}
 
 }
