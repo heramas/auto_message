@@ -44,7 +44,7 @@ spring:  mvc:    view:      prefix: /WEB-INF/view/
         smtp:
           auth: true
           starttls:
-            enable: true# 기본 설정
+            enable: true# 기본 설정 
   security:    user:      name: test
       password: test 
             
