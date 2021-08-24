@@ -17,46 +17,63 @@ logging:
   config: classpath:log4j2.xml
 
 #WAS server setting
-server:  port: 7070
-  servlet:    context-path: /
+server:
+  port: 7070
+  servlet:
+    context-path: /
     
 # View Resolver setting
-spring:  mvc:    view:      prefix: /WEB-INF/view/
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/view/
       suffix: .jsp
       
-# mongoDB setting  data:    mongodb:
+# mongoDB setting
+  data:
+    mongodb:
       uri: ENC(V4A/IboMg/AA3INkd6iTHZ2YFZ+KkbCMg9JkVGFSvt2NT/MJ7XZ7Xg==)
       username: ENC(ANRlDmBNxa2xlQaVQ9ljQg==)
       password: ENC(6OH9Q9cMiaxOdC+WLEmyUFfG93wZBQTM)
       
 # mysql setting
-  datasource:    driver-class-name: com.mysql.cj.jdbc.Driver
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
     url: ENC(vCFX2lAW4Dqtut2b59spjpe1E64eKn7FrKivk+/SbuTHdPcdlj8gD7J7h3O5hN0p)
     username: ENC(K97cVsJkcJL+d1PaWg/mtQ==)
     password: ENC(zxH6ZcPPbTt6W/i3uU/gWipqD3SaiBVr)
 
 # mail sender    
-  mail:    host: ENC(MlsgqswSEs14viAL3/xRUlomxJtF4gei)
+  mail:
+    host: ENC(MlsgqswSEs14viAL3/xRUlomxJtF4gei)
     port: 587
     username: ENC(MJFfEgjv8g97mRHOe80iU0m+9x6F0IeN50FSVcYwABU=)
     password: ENC(qB81HZCFGEsgnzQb5s0WK+5i3mZCoOxi)
-    properties:      mail:
+    properties:
+      mail:
         smtp:
           auth: true
           starttls:
-            enable: true# 기본 설정 
-  security:    user:      name: test
+            enable: true
+# 기본 설정 
+  security:
+    user:
+      name: test
       password: test 
             
 # jasypt bean.. WebMvcCnfiguration 등록
-jasypt:  encryptor:    bean: jasyptStringEncrptor
+jasypt:
+  encryptor:
+    bean: jasyptStringEncrptor
     algorithm: PBEWithMD5AndDES
-    property:      prefix: ENC(
+    property:
+      prefix: ENC(
       suffix: )
     pool-size: 1
   
 # push
-propertis:  push: 
+propertis:
+  push: 
     key: ENC(k3YSrll8d/SyV4FMRPMjWqn0tLAx3LvFcVSwxboDhyIv7Evt7fb89N9EwtZTlttFJCGD5t/U9t3QUCF8PcsX2UKXvlG3pylMADo00uMScg0LF3RmJ6w7/ExXEn30ZerKzF2s46qcyr3/5EP3FTSpNKmPlspUJ4J84ZS+MUHsmljXkeqoimroZFywUZG/spQvihCVCagoVR8VNRtssAOeDta12lG6H9qg)
 
 naver:

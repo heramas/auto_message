@@ -22,7 +22,7 @@ import com.auto.message.service.MemberMapper;
 public class AutoMessageApplication implements CommandLineRunner{
 
 	@Autowired
-	private MemberMapper mapper;
+	private MemberMapper mappers;
 	
 	@Autowired
 	private MongoTemplate mongoTemplate;
@@ -34,7 +34,7 @@ public class AutoMessageApplication implements CommandLineRunner{
 	@Override
 	public void run(String... args) throws Exception {
 		
-		List<Member> mList = mapper.selectMemberList();
+		List<Member> mList = mappers.selectMemberList();
 		System.out.println("mysql : " + mList);
 		
 		List<MongoTestDTO> result = mongoTemplate.findAll(MongoTestDTO.class);

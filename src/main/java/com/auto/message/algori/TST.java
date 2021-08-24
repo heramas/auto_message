@@ -1,4 +1,4 @@
-package com.auto.message;
+package com.auto.message.algori;
 
 public class TST {
 

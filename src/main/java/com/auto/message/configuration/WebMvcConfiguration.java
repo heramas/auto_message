@@ -47,13 +47,15 @@ public class WebMvcConfiguration implements WebMvcConfigurer{
 	}
 
 	public static void main(String[] args) {
-		StandardPBEStringEncryptor pbeEnc = new StandardPBEStringEncryptor();
-		pbeEnc.setAlgorithm("PBEWithMD5AndDES");
+//		StandardPBEStringEncryptor pbeEnc = new StandardPBEStringEncryptor();
+		PooledPBEStringEncryptor pbeEnc = new PooledPBEStringEncryptor();
+		pbeEnc.setAlgorithm("PBEWITHMD5ANDDES");
 		pbeEnc.setPassword("auto_message");
+		pbeEnc.setPoolSize(1);
 		
 		String host		="mongodb://localhost:27017/admin";
-		String port		="QiFOFTCJJCRztSX2Xg1z";
-		String username	="gi6CQ0CUH2";
+		String port		="27017";
+		String username	="root";
 		String password	="1q2w3e!@#";
 		
 
@@ -62,6 +64,10 @@ public class WebMvcConfiguration implements WebMvcConfigurer{
 		System.out.println("port:"+pbeEnc.encrypt(port));
 		System.out.println("name:"+pbeEnc.encrypt(username));
 		System.out.println("pass:"+pbeEnc.encrypt(password));
+		System.out.println("======================================================");
+		System.out.println("host:"+pbeEnc.decrypt("V4A/IboMg/AA3INkd6iTHZ2YFZ+KkbCMg9JkVGFSvt2NT/MJ7XZ7Xg=="));
+		System.out.println("name:"+pbeEnc.decrypt("ANRlDmBNxa2xlQaVQ9ljQg=="));
+		System.out.println("pass:"+pbeEnc.decrypt("6OH9Q9cMiaxOdC+WLEmyUFfG93wZBQTM"));
 	}
 	
 }

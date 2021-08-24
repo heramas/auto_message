@@ -1,4 +1,4 @@
-package com.auto.message;
+package com.auto.message.algori;
 
 import java.util.Arrays;
 import java.util.stream.Stream;
