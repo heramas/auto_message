@@ -28,6 +28,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.ModelAndView;
 
 import com.auto.message.component.MailSendComponent;
 import com.auto.message.component.SearchComponent;
@@ -64,6 +65,14 @@ public class MessageController {
 	private String clientId;
 	@Value("${naver.search.clientSecret}")
 	private String cSecret;
+	
+	@RequestMapping(value = "/", method = {RequestMethod.GET, RequestMethod.POST} )
+	public ModelAndView home() {
+		
+		ModelAndView mv = new ModelAndView();
+		mv.setViewName("index.jsp");
+		return mv;
+	}
 	
 	@GetMapping("/title")
 	public String title() {
