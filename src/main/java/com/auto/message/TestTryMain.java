@@ -6,29 +6,29 @@ public class TestTryMain {
 		
 		String a = null;
 		try {
-			a = "하이";
-			if(a.equals("하이")) throw new ResponseException("99");
-			a = "로하";
+			a = "ownReplace";
+			if(a.equals("ownReplace")) throw new ResponseException("99");
+			a = "twoReplace";
 			
 		} catch (ResponseException e) {
 			if("99".equals(e.getErrCode())) {
-				a = "돌려";
+				a = "threeReplace";
 			}
 			if("10".equals(e.getErrCode())) {
-				 a = "false";
+				 a = "fourReplace";
 			}
 		} catch (NumberFormatException e) { 
 
 		} catch (Exception e) {
 			
-			if("하이".equals(a)) { 
-				a = "돌려";
+			if("ownReplace".equals(a)) { 
+				a = "threeReplace";
 			}
 			
-			if("돌려".equals(a)) a = "false";
+			if("threeReplace".equals(a)) a = "fourReplace";
 		}finally {
 			try {
-				if(a.equals("false")) throw new Exception();
+				if(a.equals("fourReplace")) throw new Exception();
 			} catch (Exception e2) {
 				a = "finally > catch > println";
 			} finally {

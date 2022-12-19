@@ -62,20 +62,6 @@ public class ckhDnaServ {
 		}
 		
 		public void setDNAData(int sys_ver, int dna_count, String[] dna_index_array, String[] fdna_array, String remote_addr, int dnagen_start_sec) {
-	/*
-			ByteArrayOutputStream output = new ByteArrayOutputStream(dna_count * 6);	// 6 : 한개의 dna일때 사이즈 index : 2 byte, fdna : 4 byte
-			
-			for(int i=0; i<dna_count; i++) {
-				byte[] b1 = DNAByteUtil.short2byte(Short.parseShort(dna_index_array[i]));
-				byte[] b2 = DNAByteUtil.int2byte(Integer.parseInt(fdna_array[i]));
-				output.write(b1, 0, b1.length);
-				output.write(b2, 0, b2.length);
-			}
-
-			dnaData = output.toByteArray();		
-	*/ 
-			// jdk 1.4 !!
-			// ByteBuffer �� ����		
 			
 			int aaa= dna_count * 6;
 			ByteBuffer buf = ByteBuffer.allocate(aaa);
@@ -97,27 +83,12 @@ public class ckhDnaServ {
 					fdna_array2 = Integer.parseInt(fdna_array1);	
 					//fdna_array2 = Long.parseLong(fdna_array1);
 				}catch(Exception e){
-					//dnaData = buf.array();
-					/*
-					System.out.println("aaa==>"+aaa);				
-					System.out.println("Short.parseShort(dna_index_array["+i+"])==>"+dna_index_array[i]);
-					System.out.println("Integer.parseInt(fdna_array["+i+"])==>"+fdna_array[i]);
-					System.out.println("dna_count==>"+dna_count);
-					System.out.println("remote_addr==>"+remote_addr);
-					System.out.println("dnagen_start_sec==>"+dnagen_start_sec);
-					*/
-					//e.printStackTrace(System.out);	
-					// 127번째 dna_index_array2 에러발생시 임시로 배열값-1로 셋팅
 					fdna_array2 = Integer.parseInt(fdna_array[i-1]);
-					
 				}   
 				
 				buf.putShort(dna_index_array2);
 				buf.putInt(fdna_array2);
-				//buf.putLong(fdna_array2);
 			}
-			
-			//System.out.println("ByteBuffer.allocate==>"+aaa);
 			
 			dnaData = buf.array();
 
@@ -127,31 +98,12 @@ public class ckhDnaServ {
 			}
 			
 			
-//			if(sys_ver == DNAServerEnv.SYS_VER_AUDIO) {
-//				retCode = "AUD";			
-//			} else if(sys_ver == DNAServerEnv.SYS_VER_VIDEO) {
-//				retCode = "VID";			
-//			} else if(sys_ver == DNAServerEnv.SYS_VER_ETRI_VIDEO) {
-//				//retCode = "ETRI_VID";					
-//				retCode = "VID";
-//			} else if(sys_ver == DNAServerEnv.SYS_VER_MUSIC) {
-//				//retCode = "MUS";
-//				retCode = "AUD";			
-//			} else {
-//				retCode = "NUL";
-//			}
-			
 			retCode = "AUD";
 			sendSocketCount = "001";
 			
-			//if(sys_ver == DNAServerEnv.SYS_VER_P2P || sys_ver == DNAServerEnv.SYS_VER_TEST) {
-			// P2P 일때는 dna 생성 시간을 IP 앞에 붙여서 보낸다.
 			sendClientIP  = String.valueOf(dnagen_start_sec);
 			sendClientIP +=	"^";
 			sendClientIP += remote_addr;
-			//} else {
-			//	sendClientIP = remote_addr;
-			//}
 			
 			for(int j=sendClientIP.length(); j<20; j++) {	// 20 자리 채우기
 				sendClientIP = sendClientIP + " ";	
@@ -168,9 +120,6 @@ public class ckhDnaServ {
 			strBuf.append(sendClientIP);
 			
 			byte[] header = strBuf.toString().getBytes();
-
-	//DNASearchLog.write("header.length=" + header.length);	
-	//DNASearchLog.write("dnaData.length=" + dnaData.length);		
 
 			output.write(header, 0, header.length);
 			output.write(dnaData, 0, dnaData.length);
@@ -338,7 +287,7 @@ public class ckhDnaServ {
 					System.out.println(m_ip +"\t성공\t" + recvFormat.music_id);
 				} else {
 					//endThread(m_ip, m_port, this, false, recvFormat.retCode, null, null, null, null);
-					System.out.println(m_ip +"\t실패");
+					System.out.println(m_ip +"\t--------[실패]");
 				}
 			} catch(SocketTimeoutException ste) {
 				ste.printStackTrace(System.out);
@@ -347,9 +296,6 @@ public class ckhDnaServ {
 				String strCurrTime = (new SimpleDateFormat("yyyyMMddHHmmss")).format(currTime);	
 				
 				System.out.println(strCurrTime + " : " + "[SocketTimeoutException] " + "IP:" + m_ip + ", PORT:" + Integer.parseInt(m_port));	
-				//DNASearchLog.writeErr(ste.getMessage() + "IP:" + m_ip + ", PORT:" + Integer.parseInt(m_port), true,m_sys_ver);
-				//endThread(m_ip, m_port, this, false, null, null, null, null, null);
-				//return;	
 				
 			} catch(ConnectException ce) {
 				ce.printStackTrace(System.out);	
@@ -358,9 +304,6 @@ public class ckhDnaServ {
 				String strCurrTime = (new SimpleDateFormat("yyyyMMddHHmmss")).format(currTime);	
 				
 				System.out.println(strCurrTime + " : " + "[ConnectException] IP:" + m_ip + ", PORT:" + Integer.parseInt(m_port));
-				//DNASearchLog.writeErr(ce.getMessage() + "IP:" + m_ip + ", PORT:" + Integer.parseInt(m_port), true,m_sys_ver);
-				//endThread(m_ip, m_port, this, false, null, null, null, null, null);
-				//return;	
 				
 			} catch(UnknownHostException ue) {
 				ue.printStackTrace(System.out);
@@ -369,9 +312,6 @@ public class ckhDnaServ {
 				String strCurrTime = (new SimpleDateFormat("yyyyMMddHHmmss")).format(currTime);	
 				
 				System.out.println(strCurrTime + " : " + "[UnknownHostException] IP:" + m_ip + ", PORT:" + Integer.parseInt(m_port));
-				//DNASearchLog.writeErr(ue.getMessage() + "IP:" + m_ip + ", PORT:" + Integer.parseInt(m_port), true,m_sys_ver);
-				//endThread(m_ip, m_port, this, false, null, null, null, null, null);
-				//return;				
 			} catch(IOException ioe) {
 				ioe.printStackTrace(System.out);
 
@@ -379,9 +319,6 @@ public class ckhDnaServ {
 				String strCurrTime = (new SimpleDateFormat("yyyyMMddHHmmss")).format(currTime);	
 	
 				System.out.println(strCurrTime + " : " + "[IOException] IP:" + m_ip + ", PORT:" + Integer.parseInt(m_port));
-				//DNASearchLog.writeErr(ioe.getMessage() + "IP:" + m_ip + ", PORT:" + Integer.parseInt(m_port), true,m_sys_ver);
-				//endThread(m_ip, m_port, this, false, null, null, null, null, null);
-				//return;				
 			} catch(Exception e) {
 				e.printStackTrace(System.out);
 		
@@ -389,9 +326,6 @@ public class ckhDnaServ {
 				String strCurrTime = (new SimpleDateFormat("yyyyMMddHHmmss")).format(currTime);	
 
 				System.out.println(strCurrTime + " : " + "[Exception] IP:" + m_ip + ", PORT:" + Integer.parseInt(m_port));	
-				//DNASearchLog.writeErr(e.getMessage() + "IP:" + m_ip + ", PORT:" + Integer.parseInt(m_port), true,m_sys_ver);
-				//endThread(m_ip, m_port, this, false, null, null, null, null, null);
-				//return;	
 			} finally {
 				// 2006.12.04
 				// 검색서버 TIMIE_WAIT 없애기 위해서
