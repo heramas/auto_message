@@ -9,9 +9,7 @@ import java.time.OffsetDateTime;
 import java.time.Period;
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
-import java.util.Arrays;
 import java.util.Calendar;
-import java.util.List;
 
 public class CalendarExample {
 
@@ -30,6 +28,8 @@ public class CalendarExample {
         int dow = today.get(Calendar.DAY_OF_WEEK);
         String dowStr = "";
 
+        System.out.println(year+"/"+month+"/"+date+"/"+woy+"/"+wom+"/"+doy+"/"+dom+"/"+dow);
+        
         switch (dow) {
 		case 1: dowStr = "일";
 		break;
